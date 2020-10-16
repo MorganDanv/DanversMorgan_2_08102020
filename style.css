@@ -1,0 +1,156 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url('PoliceRaleway/Raleway/static/Raleway-Black.ttf') format('truetype');
+
+}
+
+html {
+	font-family: 'Raleway';
+}
+
+img {
+	height: auto;
+	max-width: 33%;
+}
+
+img.imagette {
+	height: 100px;
+	min-width: 99%;
+	max-width: 99%;
+}
+
+#logo {
+	height: 30px;
+}
+
+.barre_info {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-between;
+}
+
+#bouton_recherche {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+
+.ligne_hebergement {
+	display: flex;
+}
+
+
+.boite_hebergement {
+	display: flex;
+	height: 207px;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 14px;
+	flex: 1;
+	padding-top: 10px;
+	justify-content: space-around;
+	grid-template-columns: 33% 33% 33%;
+}
+
+.conteneur_boite_herbergement {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+	display: grid;
+}
+
+
+.header {
+	grid-area: header;
+	grid-column-start: 1;
+	grid-column-end: six;
+	grid-row-start: 1;
+	grid-row-end: six;
+}
+
+.hebergement_marseille {
+	margin-right: 20px;
+	background-color: #F2F2F2;
+	border-radius: 14px;
+	padding: 34px;
+	grid-area: main;
+	grid-column-start: 1;
+	grid-column-end: six;
+	grid-row-start: 1;
+	grid-row-end: six;
+}
+
+.les_plus_populaires {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F2F2F2;
+	width: 420px;
+	border-radius: 14px;
+	flex-shrink: 0;
+	grid-area: sidebar;
+	grid-column-start: 1;
+	grid-column-end: six;
+	grid-row-start: 1;
+	grid-row-end: six;
+}
+
+.Activités {
+	background-color: #F2F2F2;
+	display: grid;
+	grid-template-columns: 40% 40%;
+	grid-template-rows: 1fr;
+	grid-column-gap: 3%;
+	grid-area: main2;
+	grid-column-start: 1;
+	grid-column-end: six;
+	grid-row-start: 1;
+	grid-row-end: six;
+}
+
+#footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 15px;
+	padding-bottom: 40px;
+	grid-area: footer;
+	grid-column-start: 1;
+	grid-column-end: six;
+	grid-row-start: 1;
+	grid-row-end: six;
+}
+
+
+.conteneur {
+	width: 1340px;
+	margin: auto;
+	padding: 0 50px;
+	display: grid;
+	grid-template-areas: "<grid-area-grid> | . | none | ..."
+		"..."
+		grid-template-columns: 150px 15px 150px 150px;
+	grid-template-rows: auto;
+	grid-template-areas: "header header header header"
+		"main main . sidebar"
+		"main2 main2 main2 main2"
+		"footer footer footer footer"
+		grid-column-gap: 10px;
+	grid-row-gap: 15px;
+	justify-items: start;
+	align-items: start;
+	justify-content: space-between;
+	align-content: space-between;
+}
