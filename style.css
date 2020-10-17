@@ -15,8 +15,8 @@ img {
 
 img.imagette {
 	height: 100px;
-	min-width: 99%;
 	max-width: 99%;
+	min-width: 99%;
 }
 
 #logo {
@@ -26,9 +26,9 @@ img.imagette {
 .barre_info {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
-	justify-content: space-between;
 }
 
 #bouton_recherche {
@@ -36,121 +36,122 @@ img.imagette {
 	flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
+	padding-bottom: 50px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 50px;
-	padding-bottom: 50px;
 
 }
 
-.ligne_hebergement {
+/* .ligne_hebergement {
 	display: flex;
-}
+} */
 
 
 .boite_hebergement {
-	display: flex;
-	height: 207px;
-	flex-direction: column;
 	align-items: center;
 	background-color: #fff;
 	border-radius: 14px;
+	display: flex;
+	flex-direction: column;
 	flex: 1;
-	padding-top: 10px;
+	/* grid-template-columns: 33% 33% 33%; */
+	height: 207px;
 	justify-content: space-around;
-	grid-template-columns: 33% 33% 33%;
+	padding-top: 10px;
 }
 
 .conteneur_boite_herbergement {
-	display: flex;
+	/* display: flex; */
+	/* display: grid; */
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 20px;
-	display: grid;
 }
 
 
-.header {
+div.header {
 	grid-area: header;
+	/* grid-column-end: 6;
 	grid-column-start: 1;
-	grid-column-end: six;
-	grid-row-start: 1;
-	grid-row-end: six;
+	grid-row-end: 50;
+	grid-row-start: 1; */
 }
 
-.hebergement_marseille {
-	margin-right: 20px;
+div.hebergement_marseille {
 	background-color: #F2F2F2;
 	border-radius: 14px;
-	padding: 34px;
 	grid-area: main;
-	grid-column-start: 1;
-	grid-column-end: six;
-	grid-row-start: 1;
-	grid-row-end: six;
+	/* grid-column-end: 6; */
+	/* grid-column-start: 1; */
+	/* grid-row-end: 50; */
+	/* grid-row-start: 12; */
+	margin-right: 20px;
+	padding: 34px;
 }
 
-.les_plus_populaires {
-	display: flex;
-	flex-wrap: wrap;
+div.les_plus_populaires {
 	background-color: #F2F2F2;
-	width: 420px;
 	border-radius: 14px;
-	flex-shrink: 0;
+	/* display: flex; */
+	/* flex-shrink: 0;
+	flex-wrap: wrap; */
 	grid-area: sidebar;
-	grid-column-start: 1;
-	grid-column-end: six;
-	grid-row-start: 1;
-	grid-row-end: six;
+	/* grid-column-end: 6;
+	grid-column-start: 4;
+	grid-row-end: 50;
+	grid-row-start: 12; */
+	width: 420px;
 }
 
-.Activités {
+div.activites {
 	background-color: #F2F2F2;
-	display: grid;
-	grid-template-columns: 40% 40%;
-	grid-template-rows: 1fr;
-	grid-column-gap: 3%;
+	/* display: grid; */
 	grid-area: main2;
-	grid-column-start: 1;
-	grid-column-end: six;
-	grid-row-start: 1;
-	grid-row-end: six;
+	/* grid-column-end: 6;
+	grid-column-gap: 3%;
+	grid-column-start: 1; */
+	/* grid-row-end: 50;
+	grid-row-start: 20; */
+	/* grid-template-columns: 40% 40%;
+	grid-template-rows: 1fr; */
 }
 
-#footer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+div#footer {
 	background-color: #F2F2F2;
+	display: flex;
+	/* flex-wrap: wrap; */
+	grid-area: footer;
+	/* grid-column-end: 6;
+	grid-column-start: 1;
+	grid-row-end: 50;
+	grid-row-start: 30; */
+	justify-content: space-between;
+	padding-bottom: 40px;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 15px;
-	padding-bottom: 40px;
-	grid-area: footer;
-	grid-column-start: 1;
-	grid-column-end: six;
-	grid-row-start: 1;
-	grid-row-end: six;
 }
 
 
 .conteneur {
-	width: 1340px;
+	align-content: space-between;
+	align-items: start;
+	display: grid;
+	grid-column-gap: 10px;
+	grid-row-gap: 15px;
+	/* grid-template-columns: 150px 150px 15px 150px; */
+	grid-template-columns: auto;
+	/* grid-template-rows: 150px 150px 150px 150px; */
+	grid-template-rows: auto;
+	justify-content: space-between;
+	justify-items: start;
 	margin: auto;
 	padding: 0 50px;
-	display: grid;
-	grid-template-areas: "<grid-area-grid> | . | none | ..."
-		"..."
-		grid-template-columns: 150px 15px 150px 150px;
-	grid-template-rows: auto;
-	grid-template-areas: "header header header header"
+	width: 1340px;
+	grid-template-areas:
+		"header header header header"
 		"main main . sidebar"
 		"main2 main2 main2 main2"
 		"footer footer footer footer"
-		grid-column-gap: 10px;
-	grid-row-gap: 15px;
-	justify-items: start;
-	align-items: start;
-	justify-content: space-between;
-	align-content: space-between;
 }
