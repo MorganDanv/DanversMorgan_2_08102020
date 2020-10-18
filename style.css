@@ -29,6 +29,7 @@ img.imagette {
 	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
+	align-items: flex-end;
 }
 
 #bouton_recherche {
@@ -40,13 +41,7 @@ img.imagette {
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 50px;
-
 }
-
-/* .ligne_hebergement {
-	display: flex;
-} */
-
 
 .boite_hebergement {
 	align-items: center;
@@ -55,15 +50,12 @@ img.imagette {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	/* grid-template-columns: 33% 33% 33%; */
 	height: 207px;
 	justify-content: space-around;
 	padding-top: 10px;
 }
 
 .conteneur_boite_herbergement {
-	/* display: flex; */
-	/* display: grid; */
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 20px;
@@ -72,20 +64,12 @@ img.imagette {
 
 div.header {
 	grid-area: header;
-	/* grid-column-end: 6;
-	grid-column-start: 1;
-	grid-row-end: 50;
-	grid-row-start: 1; */
 }
 
 div.hebergement_marseille {
 	background-color: #F2F2F2;
 	border-radius: 14px;
 	grid-area: main;
-	/* grid-column-end: 6; */
-	/* grid-column-start: 1; */
-	/* grid-row-end: 50; */
-	/* grid-row-start: 12; */
 	margin-right: 20px;
 	padding: 34px;
 }
@@ -93,39 +77,20 @@ div.hebergement_marseille {
 div.les_plus_populaires {
 	background-color: #F2F2F2;
 	border-radius: 14px;
-	/* display: flex; */
-	/* flex-shrink: 0;
-	flex-wrap: wrap; */
 	grid-area: sidebar;
-	/* grid-column-end: 6;
-	grid-column-start: 4;
-	grid-row-end: 50;
-	grid-row-start: 12; */
 	width: 420px;
+	align-self: stretch
 }
 
 div.activites {
 	background-color: #F2F2F2;
-	/* display: grid; */
 	grid-area: main2;
-	/* grid-column-end: 6;
-	grid-column-gap: 3%;
-	grid-column-start: 1; */
-	/* grid-row-end: 50;
-	grid-row-start: 20; */
-	/* grid-template-columns: 40% 40%;
-	grid-template-rows: 1fr; */
 }
 
 div#footer {
 	background-color: #F2F2F2;
 	display: flex;
-	/* flex-wrap: wrap; */
 	grid-area: footer;
-	/* grid-column-end: 6;
-	grid-column-start: 1;
-	grid-row-end: 50;
-	grid-row-start: 30; */
 	justify-content: space-between;
 	padding-bottom: 40px;
 	padding-left: 40px;
@@ -140,9 +105,7 @@ div#footer {
 	display: grid;
 	grid-column-gap: 10px;
 	grid-row-gap: 15px;
-	/* grid-template-columns: 150px 150px 15px 150px; */
 	grid-template-columns: auto;
-	/* grid-template-rows: 150px 150px 150px 150px; */
 	grid-template-rows: auto;
 	justify-content: space-between;
 	justify-items: start;
