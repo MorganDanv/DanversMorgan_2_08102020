@@ -55,12 +55,13 @@ img.imagette {
 	height: 207px;
 	justify-content: space-around;
 	padding-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .conteneur_boite_herbergement {
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 20px;
 }
 
 div.ligne_boite_hebergement {
@@ -69,6 +70,7 @@ div.ligne_boite_hebergement {
 	flex-wrap: wrap;
 	flex-flow: wrap;
 	justify-content: space-around;
+	margin-bottom: 20px;
 }
 
 div.ligne_boite_hebergement2 {
@@ -97,6 +99,17 @@ div.les_plus_populaires {
 	border-radius: 14px;
 	grid-area: sidebar;
 	width: 420px;
+}
+
+div.boite_images_populaires {
+	display: flex;
+	align-items: center;
+	border-radius: 14px;
+}
+
+div.texte_boite_populaires {
+	display: flex;
+	flex-direction: column;
 }
 
 div.activites {
