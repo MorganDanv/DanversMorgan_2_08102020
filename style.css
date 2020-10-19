@@ -10,7 +10,7 @@ html {
 
 img {
 	height: auto;
-	max-width: 33%;
+	max-width: 30%;
 }
 
 img.imagette {
@@ -29,10 +29,10 @@ img.imagette {
 	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
-	align-items: flex-end;
+
 }
 
-#bouton_recherche {
+#barre_recherche {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: auto;
@@ -42,6 +42,8 @@ img.imagette {
 	padding-right: 10px;
 	padding-top: 50px;
 }
+
+
 
 .boite_hebergement {
 	align-items: center;
@@ -59,6 +61,22 @@ img.imagette {
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 20px;
+}
+
+div.ligne_boite_hebergement {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: wrap;
+	justify-content: space-around;
+}
+
+div.ligne_boite_hebergement2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: wrap;
+	justify-content: space-around;
 }
 
 
@@ -79,7 +97,6 @@ div.les_plus_populaires {
 	border-radius: 14px;
 	grid-area: sidebar;
 	width: 420px;
-	align-self: stretch
 }
 
 div.activites {
@@ -92,10 +109,11 @@ div#footer {
 	display: flex;
 	grid-area: footer;
 	justify-content: space-between;
-	padding-bottom: 40px;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 15px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	margin-top: 25px;
 }
 
 
