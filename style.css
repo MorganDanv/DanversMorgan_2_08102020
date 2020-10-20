@@ -1,3 +1,134 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 @font-face {
 	font-family: 'Raleway';
 	src: url('PoliceRaleway/Raleway/static/Raleway-Black.ttf') format('truetype');
@@ -19,6 +150,10 @@ img.imagette {
 	min-width: 99%;
 }
 
+div.header {
+	grid-area: header;
+}
+
 #logo {
 	height: 30px;
 }
@@ -34,7 +169,7 @@ img.imagette {
 
 }
 
-#barre_recherche {
+section.barre_recherche {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: auto;
@@ -43,6 +178,10 @@ img.imagette {
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 50px;
+}
+
+section.hebergement_et_populaires {
+	#
 }
 
 
@@ -84,9 +223,6 @@ div.ligne_boite_hebergement2 {
 }
 
 
-div.header {
-	grid-area: header;
-}
 
 div.hebergement_marseille {
 	background-color: #F2F2F2;
@@ -121,12 +257,12 @@ div.texte_boite_populaires {
 	left: 30px;
 }
 
-div.activites {
+section.activites {
 	background-color: #F2F2F2;
 	grid-area: main2;
 }
 
-div#footer {
+div.footer {
 	background-color: #F2F2F2;
 	display: flex;
 	grid-area: footer;
