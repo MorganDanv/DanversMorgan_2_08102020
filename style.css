@@ -26,9 +26,11 @@ img.imagette {
 .barre_info {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+	left: 750px;
 
 }
 
@@ -105,11 +107,18 @@ div.boite_images_populaires {
 	display: flex;
 	align-items: center;
 	border-radius: 14px;
+	margin-bottom: 20px;
+	border: #F2F2F2;
+	border-radius: 14px;
 }
 
 div.texte_boite_populaires {
 	display: flex;
 	flex-direction: column;
+	align-self: start;
+	margin-left: 20px;
+	position: relative;
+	left: 30px;
 }
 
 div.activites {
@@ -127,6 +136,9 @@ div#footer {
 	padding-right: 20px;
 	padding-top: 20px;
 	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 2px;
+	border: #F2F2F2;
 }
 
 
