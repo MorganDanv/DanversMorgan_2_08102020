@@ -141,7 +141,7 @@ html {
 
 img {
 	height: auto;
-	max-width: 30%;
+	max-width: 33%;
 }
 
 img.imagette {
@@ -260,38 +260,48 @@ section.activites {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 50% 50%;
 	grid-column-gap: 20px;
-	/* grid-column-start: 1;
-	grid-row-start: 1; */
 }
 
 div.boite_activites1 {
 	grid-column-start: 1;
 	grid-row-start: 1;
+	grid-row-end: span 2;
+	grid-column-end: span 1;
 }
 
 div.boite_activites2 {
 	grid-column-start: 2;
 	grid-row-start: 1;
+	grid-column-end: 2;
+	grid-row-end: 1;
 }
 
 div.boite_activites3 {
 	grid-column-start: 2;
 	grid-row-start: 2;
+	grid-column-end: 2;
+	grid-row-end: 2;
 }
 
 div.boite_activites4 {
 	grid-column-start: 3;
 	grid-row-start: 1;
+	grid-column-end: 3;
+	grid-row-end: span 2;
 }
 
 div.boite_activites5 {
 	grid-column-start: 4;
 	grid-row-start: 1;
+	grid-column-end: 4;
+	grid-row-end: 1;
 }
 
 div.boite_activites6 {
 	grid-column-start: 4;
 	grid-row-start: 2;
+	grid-column-end: 4;
+	grid-row-end: 2;
 }
 
 div.footer {
