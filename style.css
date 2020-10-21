@@ -189,8 +189,6 @@ section.hebergement_et_populaires {
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 50% 50%;
 	grid-column-gap: 20px;
-
-
 }
 
 
@@ -262,6 +260,38 @@ section.activites {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 50% 50%;
 	grid-column-gap: 20px;
+	/* grid-column-start: 1;
+	grid-row-start: 1; */
+}
+
+div.boite_activites1 {
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+div.boite_activites2 {
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+
+div.boite_activites3 {
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+
+div.boite_activites4 {
+	grid-column-start: 3;
+	grid-row-start: 1;
+}
+
+div.boite_activites5 {
+	grid-column-start: 4;
+	grid-row-start: 1;
+}
+
+div.boite_activites6 {
+	grid-column-start: 4;
+	grid-row-start: 2;
 }
 
 div.footer {
@@ -279,16 +309,7 @@ div.footer {
 
 
 div.conteneur {
-	/* display: grid;
-	grid-column-gap: 10px;
-	grid-row-gap: 15px;
-	grid-template-columns: auto;
-	grid-template-rows: auto; */
+
 	margin: auto;
 	width: 1440px;
-	/* grid-template-areas:
-		"header header header header"
-		"main main . sidebar"
-		"main2 main2 main2 main2"
-		"footer footer footer footer" */
 }
