@@ -145,28 +145,27 @@ img {
 }
 
 img.imagette {
-	height: 100px;
-	max-width: 99%;
-	min-width: 99%;
+	height: 150px;
+	max-width: 100%;
+	min-width: 100%;
+	object-fit: cover;
 }
 
 div.header {
-	grid-area: header;
+	display: grid;
 }
 
 #logo {
 	height: 30px;
+	display: flex;
 }
 
 .barre_info {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
-	position: relative;
-	left: 750px;
-
 }
 
 section.barre_recherche {
@@ -180,8 +179,18 @@ section.barre_recherche {
 	padding-top: 50px;
 }
 
+section.filtres {
+	display: flex;
+
+}
+
 section.hebergement_et_populaires {
-	#
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 50% 50%;
+	grid-column-gap: 20px;
+
+
 }
 
 
@@ -202,7 +211,6 @@ section.hebergement_et_populaires {
 
 .conteneur_boite_herbergement {
 	flex-wrap: wrap;
-	justify-content: center;
 }
 
 div.ligne_boite_hebergement {
@@ -227,16 +235,10 @@ div.ligne_boite_hebergement2 {
 div.hebergement_marseille {
 	background-color: #F2F2F2;
 	border-radius: 14px;
-	grid-area: main;
-	margin-right: 20px;
-	padding: 34px;
 }
 
 div.les_plus_populaires {
 	background-color: #F2F2F2;
-	border-radius: 14px;
-	grid-area: sidebar;
-	width: 420px;
 }
 
 div.boite_images_populaires {
@@ -245,7 +247,6 @@ div.boite_images_populaires {
 	border-radius: 14px;
 	margin-bottom: 20px;
 	border: #F2F2F2;
-	border-radius: 14px;
 }
 
 div.texte_boite_populaires {
@@ -253,20 +254,19 @@ div.texte_boite_populaires {
 	flex-direction: column;
 	align-self: start;
 	margin-left: 20px;
-	position: relative;
-	left: 30px;
 }
 
 section.activites {
 	background-color: #F2F2F2;
-	grid-area: main2;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50% 50%;
+	grid-column-gap: 20px;
 }
 
 div.footer {
 	background-color: #F2F2F2;
 	display: flex;
-	grid-area: footer;
-	justify-content: space-between;
 	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -278,22 +278,17 @@ div.footer {
 }
 
 
-.conteneur {
-	align-content: space-between;
-	align-items: start;
-	display: grid;
+div.conteneur {
+	/* display: grid;
 	grid-column-gap: 10px;
 	grid-row-gap: 15px;
 	grid-template-columns: auto;
-	grid-template-rows: auto;
-	justify-content: space-between;
-	justify-items: start;
+	grid-template-rows: auto; */
 	margin: auto;
-	padding: 0 50px;
-	width: 1340px;
-	grid-template-areas:
+	width: 1440px;
+	/* grid-template-areas:
 		"header header header header"
 		"main main . sidebar"
 		"main2 main2 main2 main2"
-		"footer footer footer footer"
+		"footer footer footer footer" */
 }
