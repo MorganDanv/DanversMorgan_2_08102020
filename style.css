@@ -186,7 +186,7 @@ section.filtres {
 
 section.hebergement_et_populaires {
 	display: grid;
-	grid-template-columns: 960px 480px;
+	grid-template-columns: 300px 300px 300px 480px;
 	grid-template-rows: 50% 50%;
 	grid-column-gap: 20px;
 }
@@ -210,21 +210,21 @@ section.hebergement_et_populaires {
 div.boite_hebergement1 {
 	grid-column-start: 1;
 	grid-row-start: 1;
-	grid-column-end: 1;
+	grid-column-end: 2;
 	grid-row-end: 2;
 }
 
 div.boite_hebergement2 {
-	grid-column-start: 1;
+	grid-column-start: 2;
 	grid-row-start: 1;
-	grid-column-end: 1;
+	grid-column-end: 3;
 	grid-row-end: 2;
 }
 
 div.boite_hebergement3 {
-	grid-column-start: 1;
+	grid-column-start: 3;
 	grid-row-start: 1;
-	grid-column-end: 1;
+	grid-column-end: 4;
 	grid-row-end: 2;
 }
 
@@ -232,21 +232,21 @@ div.boite_hebergement4 {
 	grid-column-start: 1;
 	grid-row-start: 2;
 	grid-row-end: 3;
-	grid-column-end: 1;
+	grid-column-end: 2;
 }
 
-div/.boite_hebergement5 {
-	grid-column-start: 1;
+div.boite_hebergement5 {
+	grid-column-start: 2;
 	grid-row-start: 2;
 	grid-row-end: 3;
-	grid-column-end: 1;
+	grid-column-end: 3;
 }
 
 .boite_hebergement6 {
-	grid-column-start: 1;
+	grid-column-start: 3;
 	grid-row-start: 2;
 	grid-row-end: 3;
-	grid-column-end: 1;
+	grid-column-end: 4;
 }
 
 .conteneur_boite_herbergement {
@@ -282,25 +282,24 @@ div.les_plus_populaires {
 }
 
 div.boite_populaires1 {
-	grid-column-start: 2;
+	grid-column-start: 4;
 	grid-row-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 5;
 	grid-row-end: 1;
 }
 
 div.boite_populaires2 {
-	grid-column-start: 2;
+	grid-column-start: 4;
 	grid-row-start: 1;
-	grid-column-end: span2;
+	grid-column-end: 5;
 	grid-row-end: span2;
-
 }
 
 div.boite_populaires3 {
-	grid-column-start: 2;
+	grid-column-start: 4;
 	grid-row-start: 2;
-	grid-column-end: 2;
-	grid-row-end: 2;
+	grid-column-end: 5;
+	grid-row-end: 3;
 }
 
 div.boite_images_populaires {
