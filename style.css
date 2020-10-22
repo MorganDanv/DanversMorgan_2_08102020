@@ -141,7 +141,7 @@ html {
 
 img {
 	height: auto;
-	max-width: 33%;
+	max-width: 30%;
 }
 
 img.imagette {
@@ -186,7 +186,7 @@ section.filtres {
 
 section.hebergement_et_populaires {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 960px 480px;
 	grid-template-rows: 50% 50%;
 	grid-column-gap: 20px;
 }
@@ -205,6 +205,48 @@ section.hebergement_et_populaires {
 	padding-top: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
+}
+
+div.boite_hebergement1 {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-column-end: 1;
+	grid-row-end: 2;
+}
+
+div.boite_hebergement2 {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-column-end: 1;
+	grid-row-end: 2;
+}
+
+div.boite_hebergement3 {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-column-end: 1;
+	grid-row-end: 2;
+}
+
+div.boite_hebergement4 {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-end: 1;
+}
+
+div/.boite_hebergement5 {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-end: 1;
+}
+
+.boite_hebergement6 {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-end: 1;
 }
 
 .conteneur_boite_herbergement {
@@ -237,6 +279,28 @@ div.hebergement_marseille {
 
 div.les_plus_populaires {
 	background-color: #F2F2F2;
+}
+
+div.boite_populaires1 {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	grid-column-end: 2;
+	grid-row-end: 1;
+}
+
+div.boite_populaires2 {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	grid-column-end: span2;
+	grid-row-end: span2;
+
+}
+
+div.boite_populaires3 {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	grid-column-end: 2;
+	grid-row-end: 2;
 }
 
 div.boite_images_populaires {
