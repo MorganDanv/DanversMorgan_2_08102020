@@ -141,22 +141,27 @@ html {
 
 img {
 	height: auto;
-	max-width: 30%;
+	/* max-width: 33%; */
 }
 
 img.imagette {
-	height: 150px;
-	max-width: 100%;
-	min-width: 100%;
+	display: block;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
 	object-fit: cover;
+	position: absolute;
 }
+
+
 
 div.header {
 	display: grid;
 }
 
 #logo {
-	height: 30px;
+	height: 5vh;
 	display: flex;
 }
 
@@ -173,24 +178,33 @@ section.barre_recherche {
 	flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 50px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 50px;
+	padding-bottom: 6rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 6rem;
 }
 
 section.filtres {
 	display: flex;
-
 }
 
 section.hebergement_et_populaires {
 	display: grid;
-	grid-template-columns: 300px 300px 300px 480px;
+	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 50% 50%;
 	grid-column-gap: 20px;
+	grid-template-areas: "hebergement_marseille les_plus_populaires"
 }
 
+div.hebergement_marseille {
+	grid-area: hebergement_marseille;
+	background-color: #F2F2F2;
+	border-radius: 14px;
+	display: grid;
+	grid-template-areas:
+		"heb1 heb2 heb3"
+		"heb4 heb5 heb6";
+}
 
 
 .boite_hebergement {
@@ -200,106 +214,58 @@ section.hebergement_et_populaires {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	height: 207px;
+	height: 26vh;
 	justify-content: space-around;
 	padding-top: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
 }
 
+div.boite_hebergement_image_seulement {
+	position: relative;
+	height: 25vh;
+	overflow: hidden;
+}
+
 div.boite_hebergement1 {
-	grid-column-start: 1;
-	grid-row-start: 1;
-	grid-column-end: 2;
-	grid-row-end: 2;
+
+	grid-area: heb1;
 }
 
 div.boite_hebergement2 {
-	grid-column-start: 2;
-	grid-row-start: 1;
-	grid-column-end: 3;
-	grid-row-end: 2;
+
+	grid-area: heb2;
 }
 
 div.boite_hebergement3 {
-	grid-column-start: 3;
-	grid-row-start: 1;
-	grid-column-end: 4;
-	grid-row-end: 2;
+
+	grid-area: heb3;
 }
 
 div.boite_hebergement4 {
-	grid-column-start: 1;
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-end: 2;
+
+	grid-area: heb4;
 }
 
 div.boite_hebergement5 {
-	grid-column-start: 2;
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-end: 3;
+	grid-area: heb5;
 }
 
 .boite_hebergement6 {
-	grid-column-start: 3;
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-end: 4;
-}
 
-.conteneur_boite_herbergement {
-	flex-wrap: wrap;
-}
-
-div.ligne_boite_hebergement {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	flex-flow: wrap;
-	justify-content: space-around;
-	margin-bottom: 20px;
-}
-
-div.ligne_boite_hebergement2 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	flex-flow: wrap;
-	justify-content: space-around;
-}
-
-
-
-div.hebergement_marseille {
-	background-color: #F2F2F2;
-	border-radius: 14px;
+	grid-area: heb6;
 }
 
 div.les_plus_populaires {
+	grid-area: les_plus_populaires;
+	display: grid;
 	background-color: #F2F2F2;
-}
-
-div.boite_populaires1 {
-	grid-column-start: 4;
-	grid-row-start: 1;
-	grid-column-end: 5;
-	grid-row-end: 1;
-}
-
-div.boite_populaires2 {
-	grid-column-start: 4;
-	grid-row-start: 1;
-	grid-column-end: 5;
-	grid-row-end: span2;
-}
-
-div.boite_populaires3 {
-	grid-column-start: 4;
-	grid-row-start: 2;
-	grid-column-end: 5;
-	grid-row-end: 3;
+	flex-direction: column;
+	flex: 1;
+	grid-template-areas:
+		"pop1"
+		"pop2"
+		"pop3";
 }
 
 div.boite_images_populaires {
@@ -310,9 +276,31 @@ div.boite_images_populaires {
 	border: #F2F2F2;
 }
 
+div.boite_populaires1 {
+
+	grid-area: pop1;
+}
+
+div.boite_populaires2 {
+
+	grid-area: pop2;
+}
+
+div.boite_populaires3 {
+
+	grid-area: pop3;
+}
+
+img.populaires {
+
+	height: 15vh;
+	min-width: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+
 div.texte_boite_populaires {
-	display: flex;
-	flex-direction: column;
 	align-self: start;
 	margin-left: 20px;
 }
@@ -323,48 +311,51 @@ section.activites {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 50% 50%;
 	grid-column-gap: 20px;
+	grid-template-areas:
+		"ba1 ba2 ba4 ba5"
+		"ba1 ba3 ba4 ba6";
 }
 
 div.boite_activites1 {
-	grid-column-start: 1;
-	grid-row-start: 1;
-	grid-row-end: span 2;
-	grid-column-end: span 1;
+
+	grid-area: ba1;
 }
 
 div.boite_activites2 {
-	grid-column-start: 2;
-	grid-row-start: 1;
-	grid-column-end: 2;
-	grid-row-end: 1;
+
+	grid-area: ba2;
 }
 
 div.boite_activites3 {
-	grid-column-start: 2;
-	grid-row-start: 2;
-	grid-column-end: 2;
-	grid-row-end: 2;
+
+	grid-area: ba3;
 }
 
 div.boite_activites4 {
-	grid-column-start: 3;
-	grid-row-start: 1;
-	grid-column-end: 3;
-	grid-row-end: span 2;
+
+	grid-area: ba4;
 }
 
 div.boite_activites5 {
-	grid-column-start: 4;
-	grid-row-start: 1;
-	grid-column-end: 4;
-	grid-row-end: 1;
+
+	grid-area: ba5;
 }
 
 div.boite_activites6 {
-	grid-column-start: 4;
-	grid-row-start: 2;
-	grid-column-end: 4;
-	grid-row-end: 2;
+
+	grid-area: ba6;
+}
+
+img.activites {
+	height: 14vh;
+	min-width: 100%;
+	max-width: 100%;
+
+	object-fit: cover;
+}
+
+img.activites_zoomable {
+	height: 32vh;
 }
 
 div.footer {
@@ -382,7 +373,6 @@ div.footer {
 
 
 div.conteneur {
-
 	margin: auto;
 	width: 1440px;
 }
