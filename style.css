@@ -145,8 +145,8 @@ img {
 
 img.imagette {
 	display: block;
-	height: 98%;
-	width: 98%;
+	height: 100%;
+	width: 100%;
 	top: 0%;
 	left: 0%;
 	object-fit: cover;
@@ -167,7 +167,6 @@ div.header {
 .barre_info {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
 	;
@@ -200,6 +199,7 @@ div.hebergement_marseille {
 	grid-area: hebergement_marseille;
 	background-color: #F2F2F2;
 	border-radius: 14px;
+	height: 48rem;
 	display: grid;
 	grid-template-areas:
 		"heb1 heb2 heb3"
@@ -256,7 +256,7 @@ div.les_plus_populaires {
 	background-color: #F2F2F2;
 	flex-direction: column;
 	flex: 1;
-	height: 50rem;
+	height: 48rem;
 	border-radius: 14px;
 	grid-template-areas:
 		"pop1"
@@ -268,7 +268,7 @@ div.boite_images_populaires {
 	display: flex;
 	border-radius: 14px;
 	margin-bottom: 2rem;
-	border: #F2F2F2 2px;
+	border: #F2F2F2;
 	height: 21vh;
 	width: 40vw;
 }
@@ -277,6 +277,7 @@ div.boite_populaires1 {
 
 	grid-area: pop1;
 	border-radius: 14px;
+	overflow: hidden;
 }
 
 div.boite_populaires2 {
@@ -290,8 +291,8 @@ div.boite_populaires3 {
 }
 
 img.populaires {
-	height: 20vh;
-	min-width: 37%;
+	height: 16vh;
+	min-width: 32%;
 	max-width: 100%;
 	object-fit: cover;
 }
