@@ -141,13 +141,12 @@ html {
 
 img {
 	height: auto;
-	/* max-width: 33%; */
 }
 
 img.imagette {
 	display: block;
-	height: 100%;
-	width: 100%;
+	height: 98%;
+	width: 98%;
 	top: 0%;
 	left: 0%;
 	object-fit: cover;
@@ -171,6 +170,7 @@ div.header {
 	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
+	;
 }
 
 section.barre_recherche {
@@ -192,7 +192,7 @@ section.hebergement_et_populaires {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 50% 50%;
-	grid-column-gap: 20px;
+	grid-column-gap: 2rem;
 	grid-template-areas: "hebergement_marseille les_plus_populaires"
 }
 
@@ -208,21 +208,15 @@ div.hebergement_marseille {
 
 
 .boite_hebergement {
-	align-items: center;
 	background-color: #fff;
 	border-radius: 14px;
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-	height: 26vh;
-	justify-content: space-around;
-	padding-top: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
 }
 
 div.boite_hebergement_image_seulement {
 	position: relative;
+	width: 25vh;
 	height: 25vh;
 	overflow: hidden;
 }
@@ -262,6 +256,8 @@ div.les_plus_populaires {
 	background-color: #F2F2F2;
 	flex-direction: column;
 	flex: 1;
+	height: 50rem;
+	border-radius: 14px;
 	grid-template-areas:
 		"pop1"
 		"pop2"
@@ -270,15 +266,17 @@ div.les_plus_populaires {
 
 div.boite_images_populaires {
 	display: flex;
-	align-items: center;
 	border-radius: 14px;
-	margin-bottom: 20px;
-	border: #F2F2F2;
+	margin-bottom: 2rem;
+	border: #F2F2F2 2px;
+	height: 21vh;
+	width: 40vw;
 }
 
 div.boite_populaires1 {
 
 	grid-area: pop1;
+	border-radius: 14px;
 }
 
 div.boite_populaires2 {
@@ -292,17 +290,10 @@ div.boite_populaires3 {
 }
 
 img.populaires {
-
-	height: 15vh;
-	min-width: 100%;
+	height: 20vh;
+	min-width: 37%;
 	max-width: 100%;
 	object-fit: cover;
-}
-
-
-div.texte_boite_populaires {
-	align-self: start;
-	margin-left: 20px;
 }
 
 section.activites {
@@ -310,7 +301,7 @@ section.activites {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 50% 50%;
-	grid-column-gap: 20px;
+	grid-column-gap: 2rem;
 	grid-template-areas:
 		"ba1 ba2 ba4 ba5"
 		"ba1 ba3 ba4 ba6";
@@ -347,7 +338,7 @@ div.boite_activites6 {
 }
 
 img.activites {
-	height: 14vh;
+	height: 13vh;
 	min-width: 100%;
 	max-width: 100%;
 
@@ -355,20 +346,18 @@ img.activites {
 }
 
 img.activites_zoomable {
-	height: 32vh;
+	height: 30vh;
 }
 
 div.footer {
 	background-color: #F2F2F2;
 	display: flex;
-	padding-bottom: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	border: 2px;
-	border: #F2F2F2;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 
