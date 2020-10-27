@@ -139,25 +139,14 @@ html {
 	font-family: 'Raleway';
 }
 
-img {
-	height: auto;
-}
-
-img.imagette {
-	display: block;
-	height: 100%;
+div.container {
+	margin: auto;
 	width: 100%;
-	top: 0%;
-	left: 0%;
-	object-fit: cover;
-	position: absolute;
-	border-radius: 14px;
+	height: 100vh;
 }
 
-
-
-div.header {
-	display: grid;
+header.header {
+	display: flex;
 }
 
 #logo {
@@ -165,7 +154,7 @@ div.header {
 	display: flex;
 }
 
-.barre_info {
+nav.menu {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: auto;
@@ -173,7 +162,15 @@ div.header {
 	;
 }
 
-section.barre_recherche {
+section.section-search {
+	#
+}
+
+div.hero {
+	#
+}
+
+form.form-search {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: auto;
@@ -184,21 +181,31 @@ section.barre_recherche {
 	padding-top: 6rem;
 }
 
-section.filtres {
+div.form-group {
+	#
+}
+
+section.section-filters {
 	display: flex;
 }
 
-section.hebergement_et_populaires {
-	display: grid;
-	height: 37vh;
-	grid-template-columns: 2fr 1fr;
-	grid-template-rows: 100%;
-	grid-column-gap: 2rem;
-	grid-template-areas: "hebergement_marseille les_plus_populaires"
-
+div.filters {
+	#
 }
 
-div.hebergement_marseille {
+div.filter {
+	#
+}
+
+section.section-hebergements-populaires {
+	#
+}
+
+div.hebergements {
+	#
+}
+
+div.grid-hebergement {
 	grid-area: hebergement_marseille;
 	background-color: #F2F2F2;
 	border-radius: 14px;
@@ -211,8 +218,22 @@ div.hebergement_marseille {
 		"heb4 heb5 heb6";
 }
 
+img.images-hebergement {
+	display: block;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	object-fit: cover;
+	position: absolute;
+	border-radius: 14px;
+}
 
-.boite_hebergement {
+img {
+	height: auto;
+}
+
+.vignette-hebergement {
 	background-color: #fff;
 	border: 2px;
 	border-radius: 14px;
@@ -223,56 +244,45 @@ div.hebergement_marseille {
 	margin-right: 0.5rem;
 }
 
-div.boite_hebergement_image_seulement {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-}
 
-div.boite_hebergement1 {
+div.vignette-hebergement1 {
 
 	grid-area: heb1;
 }
 
-div.boite_hebergement2 {
+div.vignette-hebergement2 {
 
 	grid-area: heb2;
 }
 
-div.boite_hebergement3 {
+div.vignette-hebergement3 {
 
 	grid-area: heb3;
 }
 
-div.boite_hebergement4 {
+div.vignette-hebergement4 {
 
 	grid-area: heb4;
 }
 
-div.boite_hebergement5 {
+div.vignette-hebergement5 {
 	grid-area: heb5;
 }
 
-.boite_hebergement6 {
+div.vignette-hebergement6 {
 
 	grid-area: heb6;
 }
 
-div.les_plus_populaires {
-	grid-area: les_plus_populaires;
-	display: grid;
+div.populaires {
+	display: flex;
 	background-color: #F2F2F2;
 	flex-direction: column;
 	flex: 1;
 	border-radius: 14px;
-	grid-template-areas:
-		"pop1"
-		"pop2"
-		"pop3";
 }
 
-div.boite_images_populaires {
+div.vignette-populaire {
 	display: flex;
 	border-radius: 14px;
 	margin-bottom: 2rem;
@@ -281,33 +291,20 @@ div.boite_images_populaires {
 	width: 40vw;
 }
 
-div.boite_populaires1 {
-
-	grid-area: pop1;
-	border-radius: 14px;
-	overflow: hidden;
-}
-
-div.boite_populaires2 {
-
-	grid-area: pop2;
-	border-radius: 14px;
-}
-
-div.boite_populaires3 {
-
-	grid-area: pop3;
-}
-
-img.populaires {
+img.images-populaires {
 	height: 16vh;
 	width: 15vw;
-	/* min-width: 32%;
-	max-width: 100%;
-	object-fit: cover; */
 }
 
-section.activites {
+section.section-activites {
+	#
+}
+
+div.activites {
+	#
+}
+
+div.grid-activite {
 	background-color: #F2F2F2;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -318,46 +315,36 @@ section.activites {
 		"ba1 ba3 ba4 ba6";
 }
 
-div.boite_activites1 {
+div.vignette-activite1 {
 
 	grid-area: ba1;
 }
 
-div.boite_activites2 {
+div.vignette-activite2 {
 
 	grid-area: ba2;
 }
 
-div.boite_activites3 {
+div.vignette-activite3 {
 
 	grid-area: ba3;
 }
 
-div.boite_activites4 {
+div.vignette-activite4 {
 
 	grid-area: ba4;
 }
 
-div.boite_activites5 {
+div.vignette-activite5 {
 
 	grid-area: ba5;
 }
 
-div.boite_activites6 {
+div.vignette-activite6 {
 
 	grid-area: ba6;
 }
 
-img.activites {
-	height: 30vh;
-	min-width: 100%;
-	max-width: 100%;
-	object-fit: cover;
-}
-
-img.activites_zoomable {
-	height: 30vh;
-}
 
 div.footer {
 	background-color: #F2F2F2;
@@ -368,10 +355,4 @@ div.footer {
 	padding-top: 2rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-}
-
-
-div.conteneur {
-	margin: auto;
-	width: 1440px;
 }
