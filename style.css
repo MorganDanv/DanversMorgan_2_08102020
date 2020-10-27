@@ -151,6 +151,7 @@ img.imagette {
 	left: 0%;
 	object-fit: cover;
 	position: absolute;
+	border-radius: 14px;
 }
 
 
@@ -189,7 +190,7 @@ section.filtres {
 
 section.hebergement_et_populaires {
 	display: grid;
-	height: 36vh;
+	height: 37vh;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 100%;
 	grid-column-gap: 2rem;
@@ -213,9 +214,13 @@ div.hebergement_marseille {
 
 .boite_hebergement {
 	background-color: #fff;
+	border: 2px;
 	border-radius: 14px;
 	display: flex;
 	flex-direction: column;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 div.boite_hebergement_image_seulement {
@@ -286,6 +291,7 @@ div.boite_populaires1 {
 div.boite_populaires2 {
 
 	grid-area: pop2;
+	border-radius: 14px;
 }
 
 div.boite_populaires3 {
@@ -295,9 +301,10 @@ div.boite_populaires3 {
 
 img.populaires {
 	height: 16vh;
-	min-width: 32%;
+	width: 15vw;
+	/* min-width: 32%;
 	max-width: 100%;
-	object-fit: cover;
+	object-fit: cover; */
 }
 
 section.activites {
@@ -342,10 +349,9 @@ div.boite_activites6 {
 }
 
 img.activites {
-	height: 13vh;
+	height: 30vh;
 	min-width: 100%;
 	max-width: 100%;
-
 	object-fit: cover;
 }
 
