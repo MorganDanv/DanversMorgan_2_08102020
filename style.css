@@ -150,8 +150,9 @@ header.header {
 }
 
 #logo {
-	height: 5vh;
+	height: 7vh;
 	display: flex;
+	width: 7vw;
 }
 
 nav.menu {
@@ -159,7 +160,6 @@ nav.menu {
 	flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
-	;
 }
 
 section.section-search {
@@ -198,14 +198,15 @@ div.filter {
 }
 
 section.section-hebergements-populaires {
-	#
+	display: flex;
 }
 
 div.hebergements {
-	#
+	height: auto;
+	width: 66.6vw;
 }
 
-div.grid-hebergement {
+div.grid-hebergements {
 	grid-area: hebergement_marseille;
 	background-color: #F2F2F2;
 	border-radius: 14px;
@@ -231,7 +232,7 @@ img.images-hebergement {
 
 img {
 	height: auto;
-	width: 5vw;
+	width: 15vw;
 }
 
 .vignette-hebergement {
@@ -285,6 +286,8 @@ div.populaires {
 	flex-direction: column;
 	flex: 1;
 	border-radius: 14px;
+	height: 80vh;
+	width: 40vw;
 }
 
 div.vignette-populaire {
@@ -292,28 +295,30 @@ div.vignette-populaire {
 	border-radius: 14px;
 	margin-bottom: 2rem;
 	border: #F2F2F2;
-	height: 21vh;
-	width: 40vw;
+	height: 15vh;
+	width: 14vw;
 }
 
 img.images-populaires {
-	height: 16vh;
-	width: 15vw;
+	height: auto;
+	width: 100%;
 }
 
 section.section-activites {
-	#
+	/* display: flex; */
 }
 
 div.activites {
-	#
+	height: auto;
+	width: 100%;
 }
 
 div.grid-activite {
 	background-color: #F2F2F2;
 	display: grid;
+	grid-area: activites_marseille;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 100%;
+	grid-template-rows: 50% 50%;
 	grid-column-gap: 2rem;
 	grid-template-areas:
 		"ba1 ba2 ba4 ba5"
@@ -348,6 +353,11 @@ div.vignette-activite5 {
 div.vignette-activite6 {
 
 	grid-area: ba6;
+}
+
+div.images-activite {
+	width: 100%;
+	height: auto;
 }
 
 
