@@ -199,10 +199,10 @@ div.filter {
 
 section.section-hebergements-populaires {
 	display: flex;
+	height: 95vh;
 }
 
 div.hebergements {
-	height: 80vh;
 	width: 66vw;
 }
 
@@ -210,8 +210,8 @@ div.grid-hebergements {
 	grid-area: hebergement_marseille;
 	background-color: #F2F2F2;
 	border-radius: 14px;
+	height: 88%;
 	display: grid;
-
 	grid-column-gap: 2rem;
 	grid-row-gap: 2rem;
 	grid-template-areas:
@@ -231,8 +231,8 @@ img.images-hebergement {
 }
 
 img {
-	height: auto;
-	width: 50%;
+	height: 22vh;
+	width: 100%;
 }
 
 .vignette-hebergement {
@@ -245,8 +245,8 @@ img {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 	position: relative;
-	height: 15vh;
-	width: 12vw;
+	height: 18vh;
+	width: 15vw;
 	overflow: hidden;
 }
 
@@ -286,7 +286,7 @@ div.populaires {
 	flex-direction: column;
 	flex: 1;
 	border-radius: 14px;
-	height: 80vh;
+	height: 85vh;
 }
 
 div.vignette-populaire {
@@ -363,10 +363,12 @@ div.images-activite {
 div.footer {
 	background-color: #F2F2F2;
 	display: flex;
-	padding-bottom: 2rem;
+	padding-bottom: 3rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	padding-top: 2rem;
+	padding-top: 3rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	justify-content: space-around;
+	float: left;
 }
