@@ -220,14 +220,17 @@ div.hebergements {
 	flex-direction: column;
 	margin-right: 2rem;
 	background-color: #F2F2F2;
+	padding: 2rem;
 }
 
 div.grid-hebergements {
 	grid-area: hebergement_marseille;
 	height: 100%;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
 	display: grid;
-	grid-column-gap: 1vw;
-	grid-row-gap: 1vh;
+	grid-column-gap: 2vw;
+	grid-row-gap: 3vh;
 	grid-template-areas:
 		"heb1 heb2 heb3"
 		"heb4 heb5 heb6";
@@ -248,22 +251,41 @@ img.images-hebergement {
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffff;
+	border-radius: 24px;
+	padding: 0.5rem;
+	box-shadow: 4px 2px 8px 1px #CCCCCC;
+}
+
+.texte-hebergement {
+	line-height: 1.5rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.texte-gras {
+	font-weight: bold;
+}
+
+.star-filled {
+	color: #0065FC;
+}
+
+.star-empty {
+	color: #F2F2F2;
+
 }
 
 
 .vignette-hebergement {
 	background-color: #ffffff;
-	border: 2px;
 	display: flex;
 	flex-direction: column;
-	margin-top: 0.5rem;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
 	position: relative;
 	height: 100%;
 	overflow: hidden;
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
+
 }
 
 
