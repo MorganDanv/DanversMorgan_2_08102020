@@ -224,7 +224,6 @@ div.hebergements {
 
 div.grid-hebergements {
 	grid-area: hebergement_marseille;
-	border-radius: 14px;
 	height: 100%;
 	display: grid;
 	grid-column-gap: 1vw;
@@ -242,19 +241,19 @@ img.images-hebergement {
 	left: 0%;
 	object-fit: cover;
 	position: absolute;
-	border-radius: 14px;
+
 }
 
 .vignette-texte {
 	display: flex;
 	flex-direction: column;
+	background-color: #ffffff;
 }
 
 
 .vignette-hebergement {
 	background-color: #ffffff;
 	border: 2px;
-	border-radius: 14px;
 	display: flex;
 	flex-direction: column;
 	margin-top: 0.5rem;
@@ -263,6 +262,8 @@ img.images-hebergement {
 	position: relative;
 	height: 100%;
 	overflow: hidden;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
 }
 
 
