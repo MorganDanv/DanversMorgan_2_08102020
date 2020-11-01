@@ -230,10 +230,11 @@ img.images-hebergement {
 	border-radius: 14px;
 }
 
-img {
-	height: 22vh;
-	width: 100%;
+.vignette-texte {
+	display: flex;
+	flex-direction: column;
 }
+
 
 .vignette-hebergement {
 	background-color: #fff;
@@ -301,7 +302,7 @@ img.images-populaires {
 	width: 100%;
 }
 
-section.section-activites {
+/* section.section-activites {
 	display: flex;
 	width: 100%;
 }
@@ -321,7 +322,7 @@ div.grid-activite {
 	grid-template-areas:
 		"ba1 ba2 ba4 ba5"
 		"ba1 ba3 ba4 ba6";
-}
+} */
 
 div.vignette-activite1 {
 
