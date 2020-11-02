@@ -221,6 +221,7 @@ div.hebergements {
 	margin-right: 2rem;
 	background-color: #F2F2F2;
 	padding: 2rem;
+	border-radius: 14px;
 }
 
 div.grid-hebergements {
@@ -320,29 +321,43 @@ div.vignette-hebergement6 {
 
 div.populaires {
 	display: flex;
+	width: 33%;
 	background-color: #F2F2F2;
 	flex-direction: column;
-	/* flex: 1; */
 	border-radius: 14px;
-	height: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 div.vignette-populaire {
+	background-color: #ffffff;
 	display: flex;
-	border-radius: 14px;
-	margin-bottom: 2rem;
-	border: #F2F2F2;
+	flex-direction: column;
+	position: relative;
 	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
-img.images-populaires {
+.vignette-p-texte {
+	display: flex;
+	flex-direction: row;
+	background-color: #ffffff;
+	border-radius: 24px;
+}
+
+.images-populaires {
+	display: block;
+	height: 100%;
 	width: 100%;
+	top: 0%;
+	left: 0%;
+	object-fit: cover;
+	position: absolute;
 }
 
 /* section.section-activites {
 	display: flex;
-	width: 100%;
+	height: 64vh;
 }
 
 div.activites {
@@ -354,42 +369,43 @@ div.grid-activite {
 	background-color: #F2F2F2;
 	display: grid;
 	grid-area: activites_marseille;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 50% 50%;
-	grid-column-gap: 2rem;
+	width: 100%;
+	height: 100%;
+	grid-column-gap: 2vw;
+	grid-row-gap: 3vh;
 	grid-template-areas:
-		"ba1 ba2 ba4 ba5"
-		"ba1 ba3 ba4 ba6";
+		"va1 va2 va4 va5"
+		"va1 va3 va4 va6";
 } */
 
 div.vignette-activite1 {
 
-	grid-area: ba1;
+	grid-area: va1;
 }
 
 div.vignette-activite2 {
 
-	grid-area: ba2;
+	grid-area: va2;
 }
 
 div.vignette-activite3 {
 
-	grid-area: ba3;
+	grid-area: va3;
 }
 
 div.vignette-activite4 {
 
-	grid-area: ba4;
+	grid-area: va4;
 }
 
 div.vignette-activite5 {
 
-	grid-area: ba5;
+	grid-area: va5;
 }
 
 div.vignette-activite6 {
 
-	grid-area: ba6;
+	grid-area: va6;
 }
 
 div.images-activite {
