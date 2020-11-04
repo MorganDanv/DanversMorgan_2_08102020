@@ -174,13 +174,13 @@ nav.menu {
 	margin-right: auto;
 }
 
-section.section-search {
+/* section.section-search {
 	#
-}
+} */
 
-div.hero {
+/* div.hero {
 	#
-}
+} */
 
 form.form-search {
 	display: flex;
@@ -193,21 +193,21 @@ form.form-search {
 	padding-top: 6rem;
 }
 
-div.form-group {
+/* div.form-group {
 	#
-}
+} */
 
 section.section-filters {
 	display: flex;
 }
 
-div.filters {
+/* div.filters {
 	#
-}
+} */
 
-div.filter {
+/* div.filter {
 	#
-}
+} */
 
 section.section-hebergements-populaires {
 	display: flex;
@@ -315,7 +315,7 @@ div.vignette-populaire {
 	width: 100%;
 }
 
-.texte-star {}
+/* .texte-star {} */
 
 .images-populaires {
 	display: block;
