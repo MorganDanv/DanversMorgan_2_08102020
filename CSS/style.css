@@ -131,19 +131,19 @@ table {
 
 @font-face {
 	font-family: 'Raleway';
-	src: url('PoliceRaleway/Raleway/static/Raleway-Black.ttf') format('truetype');
+	src: url('fonts/Raleway/static/Raleway-Black.ttf') format('truetype');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: 'Raleway';
-	src: url('PoliceRaleway/Raleway/static/Raleway-Regular.ttf') format('truetype');
+	src: url('fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Raleway';
-	src: url('PoliceRaleway/Raleway/static/Raleway-Light.ttf') format('truetype');
+	src: url('fonts/Raleway/static/Raleway-Light.ttf') format('truetype');
 	font-weight: lighter;
 }
 
@@ -230,11 +230,8 @@ div.grid-hebergements {
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 	display: grid;
-	grid-column-gap: 2vw;
-	grid-row-gap: 3vh;
-	grid-template-areas:
-		"heb1 heb2 heb3"
-		"heb4 heb5 heb6";
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
 }
 
 img.images-hebergement {
@@ -289,43 +286,13 @@ img.images-hebergement {
 
 }
 
-
-div.vignette-hebergement1 {
-
-	grid-area: heb1;
-}
-
-div.vignette-hebergement2 {
-
-	grid-area: heb2;
-}
-
-div.vignette-hebergement3 {
-
-	grid-area: heb3;
-}
-
-div.vignette-hebergement4 {
-
-	grid-area: heb4;
-}
-
-div.vignette-hebergement5 {
-	grid-area: heb5;
-}
-
-div.vignette-hebergement6 {
-
-	grid-area: heb6;
-}
-
 div.populaires {
 	display: flex;
 	width: 33%;
 	background-color: #F2F2F2;
 	flex-direction: column;
 	border-radius: 14px;
-	/* overflow: hidden; */
+	padding: 2rem;
 }
 
 div.vignette-populaire {
@@ -336,25 +303,30 @@ div.vignette-populaire {
 	height: 100%;
 	overflow: hidden;
 	width: 100%;
+	border-radius: 14px;
 }
 
 .vignette-p-texte {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	background-color: #ffffff;
-	border-radius: 24px;
+	border-radius: 14px;
 	height: 100%;
 	width: 100%;
 }
 
+.texte-star {}
+
 .images-populaires {
 	display: block;
 	height: 100%;
-	width: 100%;
+	width: 30%;
 	top: 0%;
 	left: 0%;
 	object-fit: cover;
 	position: absolute;
+	border-top-left-radius: 14px;
+	border-bottom-left-radius: 14px;
 }
 
 /* section.section-activites {
@@ -426,5 +398,4 @@ div.footer {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	justify-content: space-around;
-	float: left;
 }
