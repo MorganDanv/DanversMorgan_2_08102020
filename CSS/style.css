@@ -315,12 +315,19 @@ div.vignette-populaire {
 	width: 100%;
 }
 
-/* .texte-star {} */
+.block-img-texte-star {
+	display: flex;
+}
+
+.texte-star {
+	margin-bottom: 1rem;
+	display: flex;
+}
 
 .images-populaires {
 	display: block;
 	height: 100%;
-	width: 30%;
+	width: 33%;
 	top: 0%;
 	left: 0%;
 	object-fit: cover;
