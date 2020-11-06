@@ -306,22 +306,13 @@ div.vignette-populaire {
 	border-radius: 14px;
 }
 
-.vignette-p-texte {
-	display: flex;
-	flex-direction: column;
-	background-color: #ffffff;
-	border-radius: 14px;
-	height: 100%;
-	width: 100%;
-}
-
-.block-img-texte-star {
-	display: flex;
-}
 
 .texte-star {
 	margin-bottom: 1rem;
 	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
 }
 
 .images-populaires {
