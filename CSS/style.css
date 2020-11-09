@@ -298,27 +298,43 @@ div.populaires {
 div.vignette-populaire {
 	background-color: #ffffff;
 	display: flex;
-	flex-direction: column;
-	position: relative;
 	height: 100%;
 	overflow: hidden;
-	width: 100%;
-	border-radius: 14px;
+	border-radius: 24px;
+	padding: 0.5rem;
+	margin-bottom: 2rem;
 }
 
 
 .texte-star {
-	margin-bottom: 1rem;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.text-only {
+	margin-top: 1rem;
+
+
+}
+
+.star-only {}
+
+.block-image {
+	display: block;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	position: relative;
 
 }
 
 .images-populaires {
 	display: block;
 	height: 100%;
-	width: 33%;
+	width: 90%;
 	top: 0%;
 	left: 0%;
 	object-fit: cover;
