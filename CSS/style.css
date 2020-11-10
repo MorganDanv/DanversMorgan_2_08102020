@@ -147,7 +147,6 @@ table {
 	font-weight: lighter;
 }
 
-
 html {
 	font-family: 'Raleway';
 }
@@ -211,7 +210,7 @@ section.section-filters {
 
 section.section-hebergements-populaires {
 	display: flex;
-	height: 64vh;
+	height: 66vh;
 }
 
 div.hebergements {
@@ -225,7 +224,6 @@ div.hebergements {
 }
 
 div.grid-hebergements {
-	grid-area: hebergement_marseille;
 	height: 100%;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
@@ -252,6 +250,10 @@ img.images-hebergement {
 	border-radius: 24px;
 	padding: 0.5rem;
 	box-shadow: 4px 2px 8px 1px #CCCCCC;
+}
+
+h3.texte-gras {
+	font-size: 1.4rem;
 }
 
 .texte-hebergement {
@@ -303,6 +305,12 @@ div.vignette-populaire {
 	border-radius: 24px;
 	padding: 0.5rem;
 	margin-bottom: 2rem;
+	box-shadow: 4px 2px 8px 1px #CCCCCC;
+}
+
+h2.texte-gras {
+	margin-bottom: 2rem;
+	font-size: 1.4rem;
 }
 
 
@@ -311,20 +319,25 @@ div.vignette-populaire {
 	flex-direction: column;
 	width: 100%;
 	justify-content: space-between;
+	margin-left: 1.5rem;
 }
 
 .text-only {
-	margin-top: 1rem;
+	margin-top: 0.5rem;
+	line-height: 2rem;
 
 
 }
 
-.star-only {}
+.texte {
+	line-height: 1rem;
+}
+
 
 .block-image {
 	display: block;
 	height: 100%;
-	width: 100%;
+	width: 50%;
 	top: 0%;
 	left: 0%;
 	position: relative;
@@ -334,7 +347,7 @@ div.vignette-populaire {
 .images-populaires {
 	display: block;
 	height: 100%;
-	width: 90%;
+	width: 100%;
 	top: 0%;
 	left: 0%;
 	object-fit: cover;
@@ -343,62 +356,52 @@ div.vignette-populaire {
 	border-bottom-left-radius: 14px;
 }
 
-/* section.section-activites {
+section.section-activites {
 	display: flex;
-	height: 64vh;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
 }
 
-div.activites {
-	height: 60vh;
-	width: 100%;
-}
 
 div.grid-activite {
 	background-color: #F2F2F2;
 	display: grid;
-	grid-area: activites_marseille;
-	width: 100%;
 	height: 100%;
-	grid-column-gap: 2vw;
-	grid-row-gap: 3vh;
-	grid-template-areas:
-		"va1 va2 va4 va5"
-		"va1 va3 va4 va6";
-} */
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
 
-div.vignette-activite1 {
-
-	grid-area: va1;
 }
 
-div.vignette-activite2 {
+.block-a-image {
+	display: block;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	position: relative;
 
-	grid-area: va2;
 }
 
-div.vignette-activite3 {
+.vignette-a-texte {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	position: relative;
+	height: 100%;
 
-	grid-area: va3;
 }
 
-div.vignette-activite4 {
 
-	grid-area: va4;
-}
-
-div.vignette-activite5 {
-
-	grid-area: va5;
-}
-
-div.vignette-activite6 {
-
-	grid-area: va6;
-}
 
 div.images-activite {
+	display: block;
+	height: 100%;
 	width: 100%;
-	height: auto;
+	top: 0%;
+	left: 0%;
+	object-fit: cover;
+	position: absolute;
 }
 
 
@@ -413,3 +416,5 @@ div.footer {
 	margin-bottom: 2rem;
 	justify-content: space-around;
 }
+
+@media screen and (max-width: 1280px)
