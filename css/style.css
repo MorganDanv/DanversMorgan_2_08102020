@@ -257,9 +257,9 @@ h3.texte-gras {
 }
 
 .texte-hebergement {
-	line-height: 1.5rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 2rem;
 	margin-top: 0.5rem;
+
 }
 
 .texte-gras {
@@ -373,6 +373,7 @@ section.section-activites {
 	border-radius: 24px;
 	background-color: white;
 	padding-top: 1.5rem;
+	height: 100%;
 }
 
 
@@ -416,8 +417,9 @@ img.images-activite {
 	top: 0%;
 	left: 0%;
 	object-fit: cover;
-	border-radius: 24px;
 	position: absolute;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
 }
 
 
