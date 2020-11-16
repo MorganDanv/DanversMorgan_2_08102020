@@ -234,7 +234,7 @@ div.grid-hebergements {
 
 img.images-hebergement {
 	display: block;
-	height: 70%;
+	height: 100%;
 	width: 100%;
 	top: 0%;
 	left: 0%;
@@ -260,6 +260,7 @@ h3.texte-gras {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	height: 40%;
 
 }
 
@@ -282,7 +283,7 @@ h3.texte-gras {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	height: 100%;
+	height: 60%;
 	overflow: hidden;
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
