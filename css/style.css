@@ -393,6 +393,14 @@ div.grid-activite {
 	margin-bottom: 1.5rem;
 }
 
+.vieux-port {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 1;
+
+}
+
 .block-a-image {
 	display: block;
 	height: 80%;
@@ -441,4 +449,4 @@ div.footer {
 	justify-content: space-around;
 }
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1280px) {}
