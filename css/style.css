@@ -393,17 +393,58 @@ div.grid-activite {
 	margin-bottom: 1.5rem;
 }
 
-.vieux-port {
-	grid-row-start: 1;
-	grid-row-end: 2;
+.block-a {
 	grid-column-start: 1;
 	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
 
+.block-b {
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
+.block-c {
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 2;
+}
+
+.block-d {
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.block-e {
+	grid-column-start: 4;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
+.block-f {
+	grid-column-start: 4;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 2;
+}
+
+.vieux-port {}
+
+.espacement-bordure {
+	margin-left: 1rem;
+	margin-top: 1rem;
 }
 
 .block-a-image {
 	display: block;
-	height: 80%;
+	height: 70%;
 	width: 100%;
 	top: 0%;
 	left: 0%;
