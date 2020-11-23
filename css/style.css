@@ -398,6 +398,7 @@ div.grid-activite {
 	grid-column-end: 1;
 	grid-row-start: 1;
 	grid-row-end: 2;
+	grid-row: 1 / span 2;
 }
 
 .block-b {
@@ -419,6 +420,7 @@ div.grid-activite {
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2;
+	grid-row: 1 / span 2;
 }
 
 .block-e {
@@ -435,7 +437,7 @@ div.grid-activite {
 	grid-row-end: 2;
 }
 
-.vieux-port {}
+
 
 .espacement-bordure {
 	margin-left: 1rem;
@@ -448,6 +450,13 @@ div.grid-activite {
 	width: 100%;
 	top: 0%;
 	left: 0%;
+	position: relative;
+}
+
+.block-big-image {
+	display: block;
+	height: 86%;
+	width: 100%;
 	position: relative;
 }
 
