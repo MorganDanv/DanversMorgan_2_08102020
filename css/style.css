@@ -408,7 +408,20 @@ div.grid-activite {
 	grid-row-end: 1;
 	height: 100%;
 	grid-row: 1 / span 2;
+	display: flex;
+	flex-direction: column;
 }
+
+.block-pomegues {
+	height: 66%;
+	margin-bottom: 2rem;
+}
+
+.block-frioul {
+	height: 33%;
+}
+
+
 
 .block-c {
 	grid-column-start: 2;
@@ -470,6 +483,7 @@ div.grid-activite {
 	background-color: #ffffff;
 	box-shadow: 4px 2px 8px 1px #CCCCCC;
 	border-radius: 24px;
+	height: 100%;
 }
 
 h4.texte-gras {
