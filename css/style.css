@@ -153,7 +153,7 @@ html {
 
 div.container {
 	margin: auto;
-	width: 95%;
+	width: 75%;
 }
 
 header.header {
@@ -414,12 +414,12 @@ div.grid-activite {
 }
 
 .block-pomegues {
-	height: 55%;
+	height: 60%;
 	margin-bottom: 2rem;
 }
 
 .block-frioul {
-	height: 45%;
+	height: 40%;
 }
 
 
@@ -460,6 +460,7 @@ div.grid-activite {
 .espacement-bordure {
 	margin-left: 1rem;
 	margin-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .block-a-image {
@@ -469,6 +470,7 @@ div.grid-activite {
 	top: 0%;
 	left: 0%;
 	position: relative;
+	overflow: hidden;
 }
 
 
@@ -498,6 +500,20 @@ img.images-activite {
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
 }
+
+img.images-activite:hover {
+	transform-origin: 0 0;
+	transform: scale(1.2);
+}
+
+/* .img-hover-zoom {
+	height: 100%;
+	border-color: red;
+	overflow: hidden;
+	transform-origin: 0 0;
+	transition: transform .25s, visibility .25s ease-in;
+	transform: scale(1);
+} */
 
 
 div.footer {
