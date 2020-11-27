@@ -187,7 +187,6 @@ form.form-search {
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 6rem;
-	padding-left: 4rem;
 	padding-right: 4rem;
 	padding-top: 6rem;
 }
@@ -240,8 +239,14 @@ img.images-hebergement {
 	left: 0%;
 	object-fit: cover;
 	position: absolute;
-
 }
+
+img.images-hebergement:hover {
+	transform-origin: 0 0;
+	transform: scale(1.2);
+}
+
+
 
 .vignette-texte {
 	display: flex;
@@ -253,7 +258,7 @@ img.images-hebergement {
 }
 
 h3.texte-gras {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 }
 
 .texte-hebergement {
@@ -292,7 +297,7 @@ h3.texte-gras {
 	overflow: hidden;
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
-
+	overflow: hidden;
 }
 
 div.populaires {
@@ -314,6 +319,19 @@ div.vignette-populaire {
 	margin-bottom: 2rem;
 	box-shadow: 4px 2px 8px 1px #CCCCCC;
 }
+
+.titre-logo {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.margin-left {
+	margin-left: 11.2rem;
+}
+
+
+
+
 
 h2.texte-gras {
 	margin-bottom: 2rem;
@@ -349,6 +367,7 @@ h2.texte-gras {
 	top: 0%;
 	left: 0%;
 	position: relative;
+	overflow: hidden;
 
 }
 
@@ -362,6 +381,11 @@ h2.texte-gras {
 	position: absolute;
 	border-top-left-radius: 14px;
 	border-bottom-left-radius: 14px;
+}
+
+.images-populaires:hover {
+	transform-origin: 0 0;
+	transform: scale(1.2);
 }
 
 section.section-activites {
@@ -506,16 +530,6 @@ img.images-activite:hover {
 	transform: scale(1.2);
 }
 
-/* .img-hover-zoom {
-	height: 100%;
-	border-color: red;
-	overflow: hidden;
-	transform-origin: 0 0;
-	transition: transform .25s, visibility .25s ease-in;
-	transform: scale(1);
-} */
-
-
 div.footer {
 	background-color: #F2F2F2;
 	display: flex;
@@ -525,6 +539,7 @@ div.footer {
 	margin-bottom: 2rem;
 	justify-content: space-around;
 	width: 100%;
+	position: absolute;
 }
 
 .colonne1-texte {
@@ -540,6 +555,11 @@ div.footer {
 .colonne3-texte {
 	display: flex;
 	flex-direction: column;
+}
+
+h1.texte-gras {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 1280px) {}
