@@ -320,18 +320,10 @@ div.vignette-populaire {
 	box-shadow: 4px 2px 8px 1px #CCCCCC;
 }
 
-.titre-logo {
+.texte-logo-p {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-between;
 }
-
-.margin-left {
-	margin-left: 11.2rem;
-}
-
-
-
-
 
 h2.texte-gras {
 	margin-bottom: 2rem;
@@ -368,6 +360,8 @@ h2.texte-gras {
 	left: 0%;
 	position: relative;
 	overflow: hidden;
+	border-top-left-radius: 14px;
+	border-bottom-left-radius: 14px;
 
 }
 
@@ -379,8 +373,8 @@ h2.texte-gras {
 	left: 0%;
 	object-fit: cover;
 	position: absolute;
-	border-top-left-radius: 14px;
-	border-bottom-left-radius: 14px;
+	/* border-top-left-radius: 14px;
+	border-bottom-left-radius: 14px; */
 }
 
 .images-populaires:hover {
@@ -495,6 +489,8 @@ div.grid-activite {
 	left: 0%;
 	position: relative;
 	overflow: hidden;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
 }
 
 
@@ -521,8 +517,6 @@ img.images-activite {
 	left: 0%;
 	object-fit: cover;
 	position: absolute;
-	border-top-left-radius: 14px;
-	border-top-right-radius: 14px;
 }
 
 img.images-activite:hover {
@@ -530,16 +524,21 @@ img.images-activite:hover {
 	transform: scale(1.2);
 }
 
-div.footer {
+.footer-box {
+	width: 100%;
+	margin: auto;
 	background-color: #F2F2F2;
+}
+
+div.footer {
 	display: flex;
 	padding-bottom: 3rem;
 	padding-top: 3rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	justify-content: space-around;
-	width: 100%;
-	position: absolute;
+	width: 75%;
+
 }
 
 .colonne1-texte {
