@@ -536,25 +536,21 @@ div.footer {
 	padding-top: 3rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	justify-content: space-around;
 	width: 75%;
+	margin: auto;
 
 }
 
-.colonne1-texte {
-	display: flex;
-	flex-direction: column;
+.colonne-texte:not(:last-child) {
+
+	margin-right: 20rem;
 }
 
-.colonne2-texte {
-	display: flex;
-	flex-direction: column;
+.ligne-texte {
+	margin-bottom: 1rem;
 }
 
-.colonne3-texte {
-	display: flex;
-	flex-direction: column;
-}
+
 
 h1.texte-gras {
 	font-size: 1.2rem;
