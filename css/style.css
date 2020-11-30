@@ -158,6 +158,7 @@ div.container {
 
 header.header {
 	display: flex;
+	width: 100%;
 }
 
 #logo {
@@ -167,45 +168,57 @@ header.header {
 }
 
 nav.menu {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: auto;
-	margin-right: auto;
+	#
 }
 
-/* section.section-search {
+section.section-search {
 	#
-} */
+}
 
-/* div.hero {
+h4.texte-gras {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+div.hero {
 	#
-} */
+}
 
 form.form-search {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 6rem;
-	padding-right: 4rem;
-	padding-top: 6rem;
+	padding-bottom: 2rem;
+	padding-right: 1rem;
+	padding-top: 2rem;
 }
 
-/* div.form-group {
-	#
-} */
-
-section.section-filters {
+div.form-group {
 	display: flex;
 }
 
-/* div.filters {
-	#
-} */
+section.section-filters {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
 
-/* div.filter {
-	#
-} */
+.filtres-texte {
+	margin-right: 8rem;
+}
+
+div.filters {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+div.filter {
+	width: 25%;
+	height: 30%;
+	margin-right: 8rem;
+}
 
 section.section-hebergements-populaires {
 	display: flex;
@@ -276,6 +289,7 @@ h3.texte-gras {
 
 .texte-gras {
 	font-weight: bold;
+	color: black;
 }
 
 .star-filled {
@@ -373,8 +387,6 @@ h2.texte-gras {
 	left: 0%;
 	object-fit: cover;
 	position: absolute;
-	/* border-top-left-radius: 14px;
-	border-bottom-left-radius: 14px; */
 }
 
 .images-populaires:hover {
@@ -543,11 +555,13 @@ div.footer {
 
 .colonne-texte:not(:last-child) {
 
-	margin-right: 20rem;
+	margin-right: 17.5rem;
+
 }
 
 .footer-ligne-texte {
 	margin-bottom: 1rem;
+	color: black;
 }
 
 
