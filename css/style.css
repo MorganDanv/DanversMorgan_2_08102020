@@ -174,6 +174,7 @@ header.header {
 	border-top: 2px solid white;
 	padding: 1.5rem 0.5rem 0;
 	text-decoration: none;
+	color: grey;
 }
 
 .menu a:hover {
@@ -185,11 +186,6 @@ header.header {
 	display: flex;
 }
 
-.menu li:first-child a {
-	color: #0065FC;
-
-}
-
 .menu li:last-child a {
 	color: #0065FC;
 	font-weight: 620;
@@ -199,7 +195,7 @@ section.section-search {
 	#
 }
 
-h4.texte-gras {
+h1.texte-gras {
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
 }
@@ -224,7 +220,9 @@ div.form-group {
 
 section.section-filters {
 	display: flex;
-	width: 100%;
+	margin-bottom: 2rem;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .filtres-texte {
@@ -233,6 +231,7 @@ section.section-filters {
 
 div.filters {
 	display: flex;
+	flex: 1;
 	width: 100%;
 	border-radius: 14px;
 }
@@ -251,6 +250,7 @@ div.filter button {
 	display: flex;
 	align-items: center;
 	padding-right: 1rem;
+	padding-left: 0;
 
 }
 
@@ -264,12 +264,13 @@ div.filter button {
 	height: 1rem;
 	border-radius: 50%;
 	padding: 1rem 1rem 1rem 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .fa-money-bill-wave {
 	color: #0065FC;
-	margin: auto;
-
 }
 
 .fa-child {
@@ -284,12 +285,18 @@ div.filter button {
 	color: #0065FC;
 }
 
-
+.info {
+	flex: 0 0 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+}
 
 
 section.section-hebergements-populaires {
 	display: flex;
-	height: 66vh;
+	grid-template-columns: 70% 30%;
+	grid-gap: 2rem;
 }
 
 div.hebergements {
@@ -335,7 +342,7 @@ img.images-hebergement {
 	transform: scale(1.3);
 }
 
-h3.texte-gras {
+h2.texte-gras {
 	font-size: 1.3rem;
 }
 
@@ -408,7 +415,7 @@ div.vignette-populaire {
 	justify-content: space-between;
 }
 
-h2.texte-gras {
+h3.texte-gras {
 	margin-bottom: 2rem;
 	font-size: 1.4rem;
 }
@@ -619,6 +626,7 @@ div.footer {
 
 }
 
+
 .colonne-texte:not(:last-child) {
 
 	margin-right: 17.5rem;
@@ -628,11 +636,12 @@ div.footer {
 .footer-ligne-texte {
 	margin-bottom: 1rem;
 	color: black;
+
 }
 
 
 
-h1.texte-gras {
+h5.texte-gras {
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
 }
