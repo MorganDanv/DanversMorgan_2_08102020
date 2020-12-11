@@ -198,6 +198,12 @@ section.section-search {
 .texte-gras-h1 {
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
+	font-weight: bold;
+	color: black;
+}
+
+.subtitle {
+	font-weight: bold;
 }
 
 div.hero {
@@ -216,6 +222,18 @@ form.form-search {
 
 div.form-group {
 	display: flex;
+	border-radius: 2rem;
+	font-size: 1.25rem;
+	border: 1px solid #d3d3d3;
+	align-items: center;
+
+}
+
+.fa-map-marker-alt {}
+
+.bouton_recherche {
+	background-color: blue;
+	color: white;
 }
 
 section.section-filters {
@@ -251,7 +269,6 @@ div.filter button {
 	align-items: center;
 	padding-right: 1rem;
 	padding-left: 0;
-
 }
 
 .filter:hover button {
@@ -285,6 +302,24 @@ div.filter button {
 	color: #0065FC;
 }
 
+.fa-info {
+	margin-right: 1rem;
+	font-size: 1rem;
+	color: #0065FC;
+}
+
+.circle-i {
+	background: white;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #cfcfcf;
+}
+
 .info {
 	flex: 0 0 100%;
 	display: flex;
@@ -292,6 +327,9 @@ div.filter button {
 	margin-top: 2rem;
 }
 
+.texte-disponibilite {
+	font-weight: bold;
+}
 
 section.section-hebergements-populaires {
 	display: flex;
@@ -310,7 +348,6 @@ div.hebergements {
 }
 
 div.grid-hebergements {
-	height: 100%;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
 	display: grid;
@@ -344,6 +381,8 @@ img.images-hebergement {
 
 .texte-gras-h3 {
 	font-size: 1.3rem;
+	font-weight: bold;
+	color: black;
 }
 
 .texte-hebergement {
@@ -373,16 +412,27 @@ img.images-hebergement {
 
 }
 
+.stars {
+	margin-top: 1rem;
+}
 
 .vignette-hebergement {
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	height: 100px;
+	height: 14vh;
 	overflow: hidden;
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+	text-decoration: none;
+
 }
 
 
@@ -393,6 +443,10 @@ div.populaires {
 	flex-direction: column;
 	border-radius: 14px;
 	padding: 2rem;
+}
+
+.fa-chart-line {
+	font-size: 1.5rem;
 }
 
 div.vignette-populaire {
@@ -418,6 +472,8 @@ div.vignette-populaire {
 .texte-gras-h2 {
 	margin-bottom: 2rem;
 	font-size: 1.4rem;
+	font-weight: bold;
+	color: black;
 }
 
 
@@ -594,6 +650,8 @@ div.grid-activite {
 
 .texte-gras-h4 {
 	font-size: 1.4rem;
+	font-weight: bold;
+	color: black;
 }
 
 
