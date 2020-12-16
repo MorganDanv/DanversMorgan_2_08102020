@@ -717,18 +717,19 @@ div.footer {
 
 @media screen and (max-width: 320px) {
 	div.container {
-		width: 50%;
-		display: block;
+		width: 80%;
+
 	}
 
 	header.header {
-		width: 100%;
+		display: block;
+
 	}
 
-	div.container header.header {}
 
-	.menu {
-
+	.menu a {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 	}
 }
