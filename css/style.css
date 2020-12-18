@@ -749,6 +749,12 @@ div.footer {
 		display: block;
 	}
 
+	div.filters {
+		display: block;
+		margin-top: 1rem;
+		justify-items: start;
+	}
+
 	section.section-hebergements-populaires {
 		display: flex;
 		flex-direction: column-reverse;
@@ -782,8 +788,64 @@ div.footer {
 	}
 
 	section.section-activites {
-		display: flex;
-		flex-direction: column;
+		display: block;
+		height: 50vh;
+	}
+
+	.block-activite {
+		display: block;
+
+	}
+
+	div.grid-activite {
+		display: block;
+	}
+
+	.block-a {
+		height: 60%;
+		margin-bottom: 2rem;
+	}
+
+	.block-b {
+		height: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.block-c {
+		height: 60%;
+		margin-bottom: 2rem;
+	}
+
+	.block-d {
+		height: 60%;
+		margin-bottom: 2rem;
+	}
+
+	.block-e {
+		height: 60%;
+		margin-bottom: 2rem;
+	}
+
+	.block-f {
+		height: 60%;
+		margin-bottom: 2rem;
+	}
+
+	.block-pomegues {
+		height: 50%;
+		margin-bottom: 2rem;
+	}
+
+	.block-frioul {
+		height: 50%;
+	}
+
+	.footer-box {
+		display: block;
+	}
+
+	div.footer {
+		display: block;
 	}
 }
 
