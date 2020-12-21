@@ -779,6 +779,10 @@ div.footer {
 		padding: 2rem 1rem;
 	}
 
+	div.vignette-populaire {
+		margin-bottom: 1rem;
+	}
+
 	.link {
 		display: block;
 	}
@@ -808,7 +812,8 @@ div.footer {
 
 	.block-b {
 		height: 100%;
-		margin-bottom: 2rem;
+		margin-bottom: 7.5rem;
+		display: block;
 	}
 
 	.block-c {
@@ -832,20 +837,28 @@ div.footer {
 	}
 
 	.block-pomegues {
-		height: 50%;
+		height: 60%;
 		margin-bottom: 2rem;
+
 	}
 
 	.block-frioul {
-		height: 50%;
+		height: 60%;
+		margin-bottom: 2rem;
+
 	}
 
 	.footer-box {
 		display: block;
+		position: absolute;
+		bottom: -250rem;
+		width: 100%;
+		margin: auto;
 	}
 
 	div.footer {
 		display: block;
+
 	}
 }
 
