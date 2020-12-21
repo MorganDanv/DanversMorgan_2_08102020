@@ -713,7 +713,7 @@ div.footer {
 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
 	div.container {
 		width: 98%;
 
@@ -768,15 +768,19 @@ div.footer {
 	}
 
 	div.filters {
-		display: block;
 		margin-top: 1rem;
+		flex-wrap: wrap;
+		width: 98%;
 	}
 
 	.filtres-texte {
 		margin-right: 4rem;
 	}
 
-	div.responsive-filter {}
+	div.responsive-filter {
+		display: flex;
+
+	}
 
 	section.section-hebergements-populaires {
 		display: flex;
@@ -885,4 +889,4 @@ div.footer {
 	}
 }
 
-@media screen and (max-width: 768px)
+@media screen and (min-width: 768px)
