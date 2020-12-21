@@ -269,7 +269,7 @@ section.section-filters {
 }
 
 .filtres-texte {
-	margin-right: 4rem;
+	margin-right: 2rem;
 }
 
 div.filters {
@@ -731,6 +731,24 @@ div.footer {
 		width: 100%;
 	}
 
+	div.hero {
+		width: 98%;
+	}
+
+	h1.texte-gras-h1 {
+		width: 98%;
+	}
+
+	p.subtitle {
+		width: 100%;
+
+	}
+
+	div.info {
+		width: 98%;
+
+	}
+
 	.bouton_recherche {
 		border-radius: 14px;
 		width: 1.5rem;
@@ -752,8 +770,13 @@ div.footer {
 	div.filters {
 		display: block;
 		margin-top: 1rem;
-		justify-items: start;
 	}
+
+	.filtres-texte {
+		margin-right: 4rem;
+	}
+
+	div.responsive-filter {}
 
 	section.section-hebergements-populaires {
 		display: flex;
