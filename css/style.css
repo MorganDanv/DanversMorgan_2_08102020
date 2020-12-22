@@ -477,7 +477,6 @@ div.vignette-populaire {
 	background-color: #ffffff;
 	display: grid;
 	grid-template-columns: 40% 60%;
-	height: 100%;
 	overflow: hidden;
 	border-radius: 24px;
 	padding: 0.5rem;
@@ -545,7 +544,6 @@ div.vignette-populaire {
 
 section.section-activites {
 	display: flex;
-	height: 50vh;
 	flex-direction: column;
 	margin-top: 3rem;
 	border-radius: 24px;
@@ -584,20 +582,16 @@ div.grid-activite {
 	grid-column-end: 2;
 	grid-row-start: 1;
 	grid-row-end: 1;
-	height: 100%;
 	grid-row: 1 / span 2;
 	display: flex;
 	flex-direction: column;
 }
 
 .block-pomegues {
-	height: 60%;
 	margin-bottom: 2rem;
 }
 
-.block-frioul {
-	height: 40%;
-}
+.block-frioul {}
 
 
 
@@ -606,7 +600,6 @@ div.grid-activite {
 	grid-column-end: 2;
 	grid-row-start: 2;
 	grid-row-end: 2;
-	height: 100%;
 	grid-row: 1 / span 2;
 }
 
@@ -642,15 +635,19 @@ div.grid-activite {
 
 .block-a-image {
 	display: block;
-	height: 100%;
+	height: 150px;
 	position: relative;
 	overflow: hidden;
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
 }
 
+.block-a .block-a-image,
+.block-d .block-a-image {
+	height: 90%;
+}
 
-.vignette-a-texte {
+. .vignette-a-texte {
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffff;
@@ -683,27 +680,22 @@ img.images-activite {
 }
 
 .footer-box {
-	margin: auto;
 	background-color: #F2F2F2;
+	padding: 0 1rem;
 }
 
 div.footer {
 	display: flex;
+	justify-content: space-between;
 	padding-bottom: 3rem;
 	padding-top: 3rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	width: 90%;
-	margin: auto;
 
 }
 
 
-.colonne-texte:not(:last-child) {
-
-	margin-right: 17.5rem;
-
-}
+.colonne-texte:not(:last-child) {}
 
 .footer-ligne-texte {
 	margin-bottom: 1rem;
@@ -730,21 +722,13 @@ div.footer {
 
 	}
 
-	div.hero {
-		#
-	}
+	div.hero {}
 
-	h1.texte-gras-h1 {
-		#
-	}
+	h1.texte-gras-h1 {}
 
-	p.subtitle {
-		#
-	}
+	p.subtitle {}
 
-	div.info {
-		#
-	}
+	div.info {}
 
 	.bouton_recherche {
 		border-radius: 14px;
@@ -812,7 +796,9 @@ div.footer {
 
 	div.vignette-populaire {
 		margin-bottom: 1rem;
+		/* margin-right: 1rem; */
 	}
+
 
 	.link {
 		display: block;
@@ -824,7 +810,6 @@ div.footer {
 
 	section.section-activites {
 		display: block;
-		height: 50vh;
 	}
 
 	.block-activite {
@@ -837,59 +822,44 @@ div.footer {
 	}
 
 	.block-a {
-		height: 60%;
 		margin-bottom: 2rem;
 	}
 
 	.block-b {
-		height: 100%;
-		margin-bottom: 7.5rem;
+		margin-bottom: 2rem;
 		display: block;
 	}
 
 	.block-c {
-		height: 60%;
 		margin-bottom: 2rem;
 	}
 
 	.block-d {
-		height: 60%;
+
 		margin-bottom: 2rem;
 	}
 
 	.block-e {
-		height: 60%;
+
 		margin-bottom: 2rem;
 	}
 
 	.block-f {
-		height: 60%;
 		margin-bottom: 2rem;
 	}
 
-	.block-pomegues {
-		height: 60%;
-		margin-bottom: 2rem;
-
-	}
-
-	.block-frioul {
-		height: 60%;
-		margin-bottom: 2rem;
-
-	}
 
 	.footer-box {
 		display: block;
-		position: absolute;
-		bottom: -250rem;
-		width: 100%;
-		margin: auto;
 	}
 
 	div.footer {
 		display: block;
 
+	}
+
+	.colonne-texte {
+		margin-bottom: 2rem;
 	}
 }
 
