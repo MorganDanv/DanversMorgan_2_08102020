@@ -727,26 +727,23 @@ div.footer {
 
 	.menu a {
 		display: flex;
-		flex-direction: column;
-		width: 100%;
+
 	}
 
 	div.hero {
-		width: 98%;
+		#
 	}
 
 	h1.texte-gras-h1 {
-		width: 98%;
+		#
 	}
 
 	p.subtitle {
-		width: 100%;
-
+		#
 	}
 
 	div.info {
-		width: 98%;
-
+		#
 	}
 
 	.bouton_recherche {
@@ -767,14 +764,20 @@ div.footer {
 		display: block;
 	}
 
+	section.section-filters {
+
+		flex-direction: column;
+
+	}
+
 	div.filters {
 		margin-top: 1rem;
-		flex-wrap: wrap;
+		flex-direction: column;
 		width: 98%;
 	}
 
 	.filtres-texte {
-		margin-right: 4rem;
+		margin-right: 17rem;
 	}
 
 	div.responsive-filter {
