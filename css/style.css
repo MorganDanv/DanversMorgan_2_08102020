@@ -482,6 +482,8 @@ div.vignette-populaire {
 	padding: 0.5rem;
 	margin-bottom: 2rem;
 	box-shadow: 4px 2px 8px 1px #CCCCCC;
+	height: 130px;
+
 }
 
 .vignette-populaire:hover img {
@@ -647,13 +649,12 @@ div.grid-activite {
 	height: 90%;
 }
 
-. .vignette-a-texte {
+.vignette-a-texte {
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffff;
 	box-shadow: 4px 2px 8px 1px #CCCCCC;
 	border-radius: 24px;
-	height: 100%;
 }
 
 .vignette-a-texte:hover img {
@@ -791,12 +792,12 @@ div.footer {
 
 	div.populaires {
 		width: auto;
-		padding: 2rem 1rem;
+		padding: 2rem 1rem 1rem 0;
 	}
 
 	div.vignette-populaire {
 		margin-bottom: 1rem;
-		/* margin-right: 1rem; */
+		width: 98%;
 	}
 
 
@@ -848,6 +849,10 @@ div.footer {
 		margin-bottom: 2rem;
 	}
 
+	.block-a .block-a-image,
+	.block-d .block-a-image {
+		height: 150px;
+	}
 
 	.footer-box {
 		display: block;
@@ -863,4 +868,26 @@ div.footer {
 	}
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px) {
+	section.section-filters {
+
+		flex-direction: column;
+
+	}
+
+	div.filters {
+		margin-top: 1rem;
+		flex-direction: column;
+		width: 98%;
+		align-items: center;
+	}
+
+	.filtres-texte {
+		margin-right: 17rem;
+	}
+
+	section.section-hebergements-populaires {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
