@@ -211,11 +211,7 @@ div.hero {
 
 form.form-search {
 	display: flex;
-	flex-wrap: wrap;
-	margin-left: auto;
-	margin-right: auto;
 	padding-bottom: 2rem;
-	padding-right: 1rem;
 	padding-top: 2rem;
 }
 
@@ -411,7 +407,6 @@ img.images-hebergement {
 
 .texte-hebergement {
 	display: flex;
-	justify-content: space-between;
 	flex-direction: column;
 	padding-left: 1rem;
 	flex: 1;
@@ -506,14 +501,12 @@ div.vignette-populaire {
 .texte-star {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	justify-content: space-between;
 	margin-left: 1rem;
 }
 
 .text-only {
 	margin-top: 0.5rem;
-	margin-bottom: 0, 5rem;
 }
 
 .text-half {
@@ -557,7 +550,6 @@ section.section-activites {
 	border-radius: 24px;
 	background-color: white;
 	padding-top: 1.5rem;
-	height: 100%;
 }
 
 
@@ -710,6 +702,7 @@ div.footer {
 	div.container {
 		width: 98%;
 
+
 	}
 
 	header.header {
@@ -777,10 +770,9 @@ div.footer {
 	}
 
 	div.hebergements {
-		width: auto;
-		margin-right: 0;
 		background: none;
 	}
+
 
 	div.grid-hebergements {
 		display: block;
@@ -790,15 +782,17 @@ div.footer {
 		margin-bottom: 15px;
 	}
 
-	div.populaires {
-		width: auto;
-		padding: 2rem 1rem 1rem 0;
-	}
+
 
 	div.vignette-populaire {
 		margin-bottom: 1rem;
-		width: 98%;
 	}
+
+	.text-only {
+		margin-top: 0;
+	}
+
+
 
 
 	.link {
@@ -868,7 +862,7 @@ div.footer {
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1223px) {
 	section.section-filters {
 
 		flex-direction: column;
@@ -878,7 +872,6 @@ div.footer {
 	div.filters {
 		margin-top: 1rem;
 		flex-direction: column;
-		width: 98%;
 		align-items: center;
 	}
 
