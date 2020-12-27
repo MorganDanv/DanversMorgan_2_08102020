@@ -883,11 +883,23 @@ div.footer {
 	}
 
 	.filtres-texte {
-		margin-right: 17rem;
+		margin-right: 0;
 	}
 
 	section.section-hebergements-populaires {
 		display: flex;
 		flex-direction: column-reverse;
 	}
+
+	div.populaires {
+		margin-bottom: 1rem;
+	}
+
+	.vignette-texte {
+		height: 240px;
+	}
+
+
+
+
 }
