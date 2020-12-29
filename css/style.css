@@ -171,7 +171,6 @@ header.header {
 .menu a {
 	margin: 0.5rem 1rem;
 	border-top: 2px solid white;
-	padding: 1.5rem 0.5rem 0;
 	text-decoration: none;
 	color: grey;
 }
@@ -376,13 +375,9 @@ div.grid-hebergements {
 }
 
 img.images-hebergement {
-	display: block;
+
 	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
 	object-fit: cover;
-	position: absolute;
 	transition: transform 0.3s ease;
 }
 
@@ -439,8 +434,7 @@ img.images-hebergement {
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
-	position: relative;
-	height: 14vh;
+	height: 120px;
 	overflow: hidden;
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
@@ -471,7 +465,7 @@ div.populaires {
 div.vignette-populaire {
 	background-color: #ffffff;
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 30% 70%;
 	overflow: hidden;
 	border-radius: 24px;
 	padding: 0.5rem;
@@ -529,11 +523,9 @@ div.vignette-populaire {
 }
 
 .images-populaires {
-	display: block;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	position: absolute;
 	transition: transform 0.3s ease;
 }
 
@@ -662,13 +654,9 @@ div.grid-activite {
 
 
 img.images-activite {
-	display: block;
 	height: 100%;
 	width: 100%;
-	top: 0%;
-	left: 0%;
 	object-fit: cover;
-	position: absolute;
 	transition: transform 0.3s ease;
 }
 
@@ -713,7 +701,13 @@ div.footer {
 
 	.menu a {
 		display: flex;
+		border-bottom: 2px solid white;
+		border-top: hidden;
+		margin: 0;
+	}
 
+	.menu-ul {
+		justify-content: space-around;
 	}
 
 	div.hero {}
@@ -755,7 +749,7 @@ div.footer {
 	}
 
 	.filtres-texte {
-		margin-right: 17rem;
+		margin-right: 14rem;
 	}
 
 	div.responsive-filter {
@@ -771,6 +765,7 @@ div.footer {
 
 	div.hebergements {
 		background: none;
+		padding: 0;
 	}
 
 
@@ -782,10 +777,16 @@ div.footer {
 		margin-bottom: 15px;
 	}
 
-
+	.texte-hebergement {
+		margin-top: 1rem;
+	}
 
 	div.vignette-populaire {
 		margin-bottom: 1rem;
+	}
+
+	div.populaires {
+		margin-bottom: 2rem;
 	}
 
 	.text-only {
