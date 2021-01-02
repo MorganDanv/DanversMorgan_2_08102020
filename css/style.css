@@ -699,21 +699,9 @@ div.footer {
 
 	}
 
-	header.header {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		grid-template: "logo sincrire"
-			"hebergement activite";
-	}
+	header.header {}
 
-	.logo {
-		/* grid-column-start: 1;
-		grid-column-end: 1;
-		grid-row-start: 1;
-		grid-row-end: 2; */
-		grid-template-areas: "logo";
-	}
+	.logo {}
 
 	.menu a {
 		display: flex;
@@ -726,29 +714,11 @@ div.footer {
 		justify-content: space-around;
 	}
 
-	.first-link {
-		/* grid-column-start: 1;
-		grid-column-end: 1;
-		grid-row-start: 2;
-		grid-row-end: 3; */
-		grid-template-areas: "hebergement";
-	}
+	.first-link {}
 
-	.second-link {
-		/* grid-column-start: 2;
-		grid-column-end: 2;
-		grid-row-start: 2;
-		grid-row-end: 3; */
-		grid-template-areas: "activite";
-	}
+	.second-link {}
 
-	.link-moved {
-		/* grid-column-start: 2;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 2; */
-		grid-template-areas: "sincrire";
-	}
+	.link-moved {}
 
 	.bouton_recherche {
 		border-radius: 14px;
@@ -807,7 +777,6 @@ div.footer {
 
 	.vignette-texte {
 		margin-bottom: 15px;
-		height: 200px;
 	}
 
 	.texte-hebergement {
@@ -884,6 +853,14 @@ div.footer {
 	.block-a .block-a-image,
 	.block-d .block-a-image {
 		height: 150px;
+	}
+
+	.block-act-image {
+		height: 150px;
+		position: relative;
+		overflow: hidden;
+		border-top-left-radius: 14px;
+		border-top-right-radius: 14px;
 	}
 
 	.footer-box {
