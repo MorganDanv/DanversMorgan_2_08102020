@@ -564,14 +564,19 @@ div.grid-activite {
 	grid-row-start: 1;
 	grid-row-end: 1;
 	grid-row: 1 / span 2;
+	display: grid;
+	grid-template-rows: 52% 40%;
+	grid-gap: 8%;
 
 }
 
 .block-pomegues {
-	margin-bottom: 2rem;
+	height: 100%;
 }
 
-.block-frioul {}
+.block-frioul {
+	height: 100%;
+}
 
 
 
@@ -627,12 +632,22 @@ div.grid-activite {
 	height: 90%;
 }
 
+.block-act-image {
+	display: block;
+	height: 175px;
+	position: relative;
+	overflow: hidden;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
 .vignette-a-texte {
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffff;
 	box-shadow: 4px 2px 8px 1px #CCCCCC;
 	border-radius: 24px;
+	height: 100%;
 }
 
 .vignette-a-texte:hover img {
@@ -688,13 +703,16 @@ div.footer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
+		grid-template: "logo sincrire"
+			"hebergement activite";
 	}
 
 	.logo {
-		grid-column-start: 1;
+		/* grid-column-start: 1;
 		grid-column-end: 1;
 		grid-row-start: 1;
-		grid-row-end: 2;
+		grid-row-end: 2; */
+		grid-template-areas: "logo";
 	}
 
 	.menu a {
@@ -709,24 +727,27 @@ div.footer {
 	}
 
 	.first-link {
-		grid-column-start: 1;
+		/* grid-column-start: 1;
 		grid-column-end: 1;
 		grid-row-start: 2;
-		grid-row-end: 3;
+		grid-row-end: 3; */
+		grid-template-areas: "hebergement";
 	}
 
 	.second-link {
-		grid-column-start: 2;
+		/* grid-column-start: 2;
 		grid-column-end: 2;
 		grid-row-start: 2;
-		grid-row-end: 3;
+		grid-row-end: 3; */
+		grid-template-areas: "activite";
 	}
 
 	.link-moved {
-		grid-column-start: 2;
+		/* grid-column-start: 2;
 		grid-column-end: 3;
 		grid-row-start: 1;
-		grid-row-end: 2;
+		grid-row-end: 2; */
+		grid-template-areas: "sincrire";
 	}
 
 	.bouton_recherche {
@@ -836,6 +857,10 @@ div.footer {
 	.block-b {
 		margin-bottom: 2rem;
 		display: block;
+	}
+
+	.block-pomegues {
+		margin-bottom: 2rem;
 	}
 
 	.block-c {
