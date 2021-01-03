@@ -712,7 +712,10 @@ div.footer {
 
 	.menu-ul {
 		justify-content: space-around;
+		flex-wrap: wrap-reverse;
 	}
+
+	nav.menu {}
 
 	.first-link {}
 
@@ -925,7 +928,26 @@ div.footer {
 		height: 240px;
 	}
 
+	.block-act-image {
+		height: 192px;
+		position: relative;
+		overflow: hidden;
+		border-top-left-radius: 14px;
+		border-top-right-radius: 14px;
+	}
+
 	.vignette-a-texte {
 		height: 240px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.block-b {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.block-pomegues {
+		margin-bottom: 2rem;
 	}
 }
