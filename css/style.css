@@ -184,12 +184,17 @@ header.header {
 	display: flex;
 }
 
-.menu li:last-child a {
-	color: #0065FC;
-	font-weight: 620;
+.block-two-links {
+	display: flex;
 }
 
+.menu li:first-child a {
+	color: #0065FC;
+}
 
+.inscription-link {
+	font-weight: 620;
+}
 
 .texte-gras-h1 {
 	font-size: 1.2rem;
@@ -381,6 +386,7 @@ img.images-hebergement {
 	padding: 0.5rem;
 	box-shadow: 4px 2px 8px 1px #CCCCCC;
 	height: 100%;
+	box-sizing: border-box;
 }
 
 .vignette-texte:hover img {
@@ -466,7 +472,8 @@ div.vignette-populaire {
 	padding: 0.5rem;
 	margin-bottom: 2rem;
 	box-shadow: 4px 2px 8px 1px #CCCCCC;
-	height: 130px;
+	height: 135px;
+	box-sizing: border-box;
 
 }
 
@@ -695,13 +702,7 @@ div.footer {
 @media screen and (max-width: 767px) {
 	div.container {
 		width: 98%;
-
-
 	}
-
-	header.header {}
-
-	.logo {}
 
 	.menu a {
 		display: flex;
@@ -711,17 +712,13 @@ div.footer {
 	}
 
 	.menu-ul {
-		justify-content: space-around;
-		flex-wrap: wrap-reverse;
+		/* justify-content: space-around;
+		flex-wrap: wrap-reverse; */
 	}
 
-	nav.menu {}
+	.block-two-links {}
 
-	.first-link {}
-
-	.second-link {}
-
-	.link-moved {}
+	.inscription-link {}
 
 	.bouton_recherche {
 		border-radius: 14px;
