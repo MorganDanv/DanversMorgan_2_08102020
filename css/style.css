@@ -172,7 +172,6 @@ header.header {
 	margin: 0.5rem 1rem;
 	border-top: 2px solid white;
 	text-decoration: none;
-	color: grey;
 }
 
 .menu a:hover {
@@ -184,6 +183,10 @@ header.header {
 	display: flex;
 }
 
+.link_moved-two {
+	display: none;
+}
+
 .block-two-links {
 	display: flex;
 }
@@ -192,8 +195,9 @@ header.header {
 	color: #0065FC;
 }
 
-.inscription-link {
+.link_moved {
 	font-weight: 620;
+	color: #0065FC;
 }
 
 .texte-gras-h1 {
@@ -704,16 +708,21 @@ div.footer {
 		width: 98%;
 	}
 
+	.logo {}
+
 	.menu a {
-		display: flex;
 		border-bottom: 2px solid white;
 		border-top: hidden;
 		margin: 0;
 	}
 
-	.menu-ul {
-		/* justify-content: space-around;
-		flex-wrap: wrap-reverse; */
+	.menu-ul {}
+
+	.link_moved-two {
+		display: flex;
+		font-weight: 620;
+		color: #0065FC;
+		justify-content: center;
 	}
 
 	.block-two-links {}
@@ -803,7 +812,7 @@ div.footer {
 	}
 
 	.link_moved {
-		display: block;
+		display: none;
 	}
 
 	section.section-activites {
