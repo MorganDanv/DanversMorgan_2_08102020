@@ -168,6 +168,10 @@ header.header {
 	margin: 1rem 0;
 }
 
+ul.no-visible-ipad {
+	display: none;
+}
+
 .menu a {
 	margin: 0.5rem 1rem;
 	border-top: 2px solid white;
@@ -710,6 +714,10 @@ div.footer {
 
 	.logo {}
 
+	nav.menu {
+		display: none;
+	}
+
 	.menu a {
 		border-bottom: 2px solid white;
 		border-top: hidden;
@@ -723,6 +731,15 @@ div.footer {
 		font-weight: 620;
 		color: #0065FC;
 		justify-content: center;
+	}
+
+	ul.no-visible-ipad {
+		display: flex;
+		align-self: flex-end;
+	}
+
+	a.color-link-resp {
+		color: #0065FC;
 	}
 
 	.block-two-links {}
@@ -887,6 +904,10 @@ div.footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1223px) {
+	ul.no-visible-ipad {
+		display: none;
+	}
+
 	section.section-filters {
 
 		flex-direction: column;
