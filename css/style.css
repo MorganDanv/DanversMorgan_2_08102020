@@ -163,6 +163,8 @@ header.header {
 	align-items: center;
 }
 
+.logo-and-link {}
+
 .logo {
 	height: 3rem;
 	margin: 1rem 0;
@@ -712,6 +714,19 @@ div.footer {
 		width: 98%;
 	}
 
+	header.header {
+		flex-direction: column;
+	}
+
+	div.logo-and-link {
+		display: flex;
+		align-items: center;
+	}
+
+	.space-box {
+		margin-right: 5rem;
+	}
+
 	.logo {}
 
 	nav.menu {
@@ -730,16 +745,15 @@ div.footer {
 		display: flex;
 		font-weight: 620;
 		color: #0065FC;
-		justify-content: center;
 	}
 
 	ul.no-visible-ipad {
 		display: flex;
-		align-self: flex-end;
 	}
 
 	a.color-link-resp {
 		color: #0065FC;
+		margin-right: 5rem;
 	}
 
 	.block-two-links {}
@@ -904,6 +918,8 @@ div.footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1223px) {
+	.logo-and-link {}
+
 	ul.no-visible-ipad {
 		display: none;
 	}
