@@ -727,6 +727,10 @@ div.footer {
 		align-items: center;
 	}
 
+	li.changing-color-resp {
+		color: grey;
+	}
+
 	.space-box {
 		margin-right: 5rem;
 	}
