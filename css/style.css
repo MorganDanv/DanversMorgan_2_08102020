@@ -178,6 +178,7 @@ ul.no-visible-ipad {
 	margin: 0.5rem 1rem;
 	border-top: 2px solid white;
 	text-decoration: none;
+	color: grey;
 }
 
 .menu a:hover {
@@ -201,7 +202,7 @@ ul.no-visible-ipad {
 	color: #0065FC;
 }
 
-.link_moved {
+.menu .link_moved {
 	font-weight: 620;
 	color: #0065FC;
 }
@@ -513,6 +514,7 @@ div.vignette-populaire {
 
 .text-only {
 	margin-top: 0.5rem;
+	color: grey;
 }
 
 .text-half {
@@ -703,11 +705,13 @@ div.footer {
 
 .footer-ligne-texte {
 	margin-bottom: 1rem;
-	color: black;
+
 
 }
 
-
+.footer-ligne-texte a {
+	color: black;
+}
 
 @media screen and (max-width: 767px) {
 	div.container {
