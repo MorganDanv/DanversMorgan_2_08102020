@@ -727,7 +727,7 @@ div.footer {
 		align-items: center;
 	}
 
-	li.changing-color-resp {
+	li.changing-color-resp a {
 		color: grey;
 	}
 
