@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
@@ -15,7 +15,7 @@
         <header class="header">
             <div class="logo-and-link">
                 <a class="space-box" href="index.html">
-                    <img src="images\logo\Reservia@3x.png" class="logo" alt="Réservia">
+                    <img src="images/logo/Reservia@3x.png" class="logo" alt="Réservia">
                 </a>
                 <ul>
                     <li> <a class="link_moved-two" href="#"> S'inscrire </a> </li>
@@ -26,23 +26,33 @@
                 <li> <a href="#block-activite-id">Activités </a> </li>
             </ul>
             <nav class="menu">
-                <ul>
-                    <li> <a class="link_moved-two" href="#"> S'inscrire </a> </li>
-                </ul>
-                <ul class="menu-ul">
+                <div>
+                    <ul>
+                        <li> <a class="link_moved-two" href="#"> S'inscrire </a> </li>
+                    </ul>
+                </div>
+                <div class="menu-ul">
                     <div class="block-two-links">
-                        <li> <a href="#hebergement-id">Hébergements</a> </li>
-                        <li class="changing-color-resp"> <a href="#block-activite-id">Activités </a> </li>
+                        <ul>
+                            <li class="blouge"> <a href="#hebergement-id">Hébergements</a></li>
+                        </ul>
+                        <ul>
+                            <li class="changing-color-resp"> <a href="#block-activite-id">Activités </a> </li>
+                        </ul>
                     </div>
-                    <li> <a class="link_moved" href="#"> S'inscrire </a> </li>
-                </ul>
+                    <div>
+                        <ul>
+                            <li> <a class="link_moved" href="#"> S'inscrire </a> </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <section>
             <div>
                 <h1 class="texte-gras-h1">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="subtitle"><span> plein centre ville ou en pleine nature <span></p>
+                <p class="subtitle"><span> plein centre ville ou en pleine nature </span></p>
             </div>
 
             <form class="form-search">
@@ -51,9 +61,11 @@
                     <input type="search" id="barre_recherche" name="q" aria-label="rechercher"
                         placeholder="Marseille, France" class="search-box" />
                     <button class="bouton_recherche">
-                        <p class="word_search"> Rechercher</p>
+                        <!-- <p class="word_search"> Rechercher</p> -->
+                        Rechercher
                         <i class="fas fa-search"></i>
                     </button>
+                </div>
             </form>
         </section>
         <section class="section-filters">
@@ -234,10 +246,10 @@
             <div class="populaires">
                 <div class="texte-logo-p">
                     <div>
-                        <h2 class="texte-gras-h2">Les plus populaires
+                        <h2 class="texte-gras-h2">Les plus populaires </h2>
                     </div>
                     <div>
-                        <i class="fas fa-chart-line"></i></h2>
+                        <i class="fas fa-chart-line"></i>
                     </div>
                 </div>
                 <div class="vignette-populaire">
@@ -319,9 +331,10 @@
                                 <img class="images-activite" src="images/activites/4_small/Vieux_Port.jpg"
                                     alt="Vieux Port" />
 
+                            </a>
                         </div>
-
-                        <p class="texte-gras espacement-bordure"> Vieux Port </p>
+                        <a href="#">
+                            <p class="texte-gras espacement-bordure"> Vieux Port </p>
                         </a>
                     </div>
 
@@ -334,8 +347,10 @@
                                     <a href="#">
                                         <img class="images-activite" src="images/activites/4_small/Fort_de_Pomègues.jpg"
                                             alt="Fort de Pomègues" />
+                                    </a>
                                 </div>
-                                <p class="texte-gras espacement-bordure"> Fort de Pomègues </p>
+                                <a href="#">
+                                    <p class="texte-gras espacement-bordure"> Fort de Pomègues </p>
                                 </a>
                             </div>
                         </div>
@@ -346,8 +361,10 @@
                                     <a href="#">
                                         <img class="images-activite" src="images/activites/4_small/Île_du_Frioul.jpg"
                                             alt="Île du Frioul" />
+                                    </a>
                                 </div>
-                                <p class="texte-gras espacement-bordure"> Île du Frioul </p>
+                                <a href="#">
+                                    <p class="texte-gras espacement-bordure"> Île du Frioul </p>
                                 </a>
                             </div>
 
@@ -360,8 +377,10 @@
                                 <img class="images-activite"
                                     src="images/activites/4_small/Parc_National_des_Calanques.jpg"
                                     alt="Parc National des Calanques" />
+                            </a>
                         </div>
-                        <p class="texte-gras espacement-bordure"> Parc National des Calanques </p>
+                        <a href="#">
+                            <p class="texte-gras espacement-bordure"> Parc National des Calanques </p>
                         </a>
                     </div>
 
@@ -371,8 +390,10 @@
                             <a href="#">
                                 <img class="images-activite" src="images/activites/4_small/Notre-Dame-de-la-Grande.jpg"
                                     alt="Notre Dame de la Grande" />
+                            </a>
                         </div>
-                        <p class="texte-gras espacement-bordure"> Notre Dame de la Grande </p>
+                        <a href="#">
+                            <p class="texte-gras espacement-bordure"> Notre Dame de la Grande </p>
                         </a>
                     </div>
 
@@ -382,8 +403,10 @@
                             <a href="#">
                                 <img class="images-activite" src="images/activites/4_small/Parc_Longchamp.jpg"
                                     alt="Parc Longchamp" />
+                            </a>
                         </div>
-                        <p class="texte-gras espacement-bordure"> Parc Longchamp </p>
+                        <a href="#">
+                            <p class="texte-gras espacement-bordure"> Parc Longchamp </p>
                         </a>
                     </div>
 
@@ -424,8 +447,6 @@
                 </p>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 </body>
 
