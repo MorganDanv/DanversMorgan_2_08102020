@@ -197,10 +197,6 @@ ul.no-visible-ipad {
 	display: flex;
 }
 
-/* .menu li:first-child a {
-	color: #0065FC;
-} */
-
 .menu li.blouge a {
 	color: #0065FC;
 }
@@ -776,7 +772,7 @@ div.footer {
 		align-items: center;
 	}
 
-	p.word_search {
+	.word-hidden-resp {
 		display: none;
 	}
 
