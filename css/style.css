@@ -742,12 +742,25 @@ div.footer {
 
 	}
 
+	a.color-blue-resp {
+		color: #0065FC;
+	}
+
+	a.un {
+		border-bottom: 2px solid #F2F2F2;
+	}
+
 	a.un:hover {
 		grid-column-start: 1;
 		grid-column-end: 2;
 		grid-row-start: 1;
 		grid-row-end: 1;
 		border-bottom: 2px solid blue;
+	}
+
+
+	a.deux {
+		border-bottom: 2px solid #F2F2F2;
 	}
 
 	a.deux:hover {
@@ -776,9 +789,7 @@ div.footer {
 		align-items: center;
 	}
 
-	li.changing-color-resp a {
-		color: grey;
-	}
+
 
 	.space-box {
 		margin-right: 5rem;
