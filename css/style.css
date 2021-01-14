@@ -170,7 +170,7 @@ header.header {
 	margin: 1rem 0;
 }
 
-ul.no-visible-ipad {
+div.no-visible-ipad {
 	display: none;
 }
 
@@ -215,10 +215,6 @@ ul.no-visible-ipad {
 	margin-bottom: 1rem;
 	font-weight: bold;
 	color: black;
-}
-
-.subtitle {
-	font-weight: bold;
 }
 
 
@@ -305,6 +301,11 @@ div.filter button {
 	padding-left: 0;
 }
 
+div.filter button i {
+	margin-right: 5px;
+}
+
+
 .filter:hover button {
 	background-color: #cfcfcf;
 }
@@ -352,6 +353,12 @@ div.filter button {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #cfcfcf;
+}
+
+div.responsive-filter {
+	display: flex;
+
+
 }
 
 .info {
@@ -716,7 +723,46 @@ div.footer {
 	color: black;
 }
 
+
 @media screen and (max-width: 767px) {
+	section.marge-filters {
+		margin: 10px;
+	}
+
+	div.filter button {
+		font-size: 0.9rem;
+	}
+
+
+
+	div.grid-for-responsive {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 50% 50%;
+
+	}
+
+	a.un:hover {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		border-bottom: 2px solid blue;
+	}
+
+	a.deux:hover {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		border-bottom: 2px solid blue;
+	}
+
+	a.bricolage {
+		text-align: center;
+		width: 100%;
+	}
+
 	div.container {
 		width: 98%;
 	}
@@ -746,9 +792,6 @@ div.footer {
 	.borders-resp {
 		border-bottom: 2px solid white;
 		padding-bottom: 6px;
-		padding-left: 15px;
-		padding-right: 15px;
-
 	}
 
 	.borders-resp:hover {
@@ -761,10 +804,6 @@ div.footer {
 		display: flex;
 		font-weight: 600;
 		color: #0065FC;
-	}
-
-	ul.no-visible-ipad {
-		display: flex;
 	}
 
 	a.color-link-resp {
@@ -810,6 +849,10 @@ div.footer {
 		display: flex;
 
 
+	}
+
+	div.info {
+		margin: 15px;
 	}
 
 	section.section-hebergements-populaires {
@@ -928,6 +971,7 @@ div.footer {
 		margin-bottom: 2rem;
 	}
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1223px) {
 

@@ -21,10 +21,10 @@
                     <li> <a class="link_moved-two" href="#"> S'inscrire </a> </li>
                 </ul>
             </div>
-            <ul class="no-visible-ipad">
-                <li> <a class="color-link-resp borders-resp" href="#hebergement-id">Hébergements</a> </li>
-                <li> <a class="borders-resp" href="#block-activite-id">Activités </a> </li>
-            </ul>
+            <div class="grid-for-responsive no-visible-ipad">
+                <a class="un borders-resp bricolage" href="#hebergement-id">Hébergements</a>
+                <a class="deux borders-resp bricolage" href="#block-activite-id">Activités </a>
+            </div>
             <nav class="menu">
                 <div>
                     <ul>
@@ -49,10 +49,10 @@
             </nav>
         </header>
 
-        <section>
+        <section class="marge-filters">
             <div>
                 <h1 class="texte-gras-h1">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="subtitle"><span> plein centre ville ou en pleine nature </span></p>
+                <p class="subtitle"><span> En plein centre ville ou en pleine nature </span></p>
             </div>
 
             <form class="form-search">
@@ -72,14 +72,16 @@
                 <h3 class="texte-gras-h3">Filtres</h3>
             </div>
             <div class="filters">
-                <div class="filter">
-                    <button name="Economique">
-                        <i class="fas fa-money-bill-wave circle"></i> Economique
-                    </button>
-                </div>
-                <div class="filter responsive-filter">
-                    <button name="Familial"> <i class="fas fa-child circle"></i> Familial
-                    </button>
+                <div class="responsive-filter">
+                    <div class="filter">
+                        <button name="Economique">
+                            <i class="fas fa-money-bill-wave circle"></i>Économique
+                        </button>
+                    </div>
+                    <div class="filter ">
+                        <button name="Familial"> <i class="fas fa-child circle"></i> Familial
+                        </button>
+                    </div>
                 </div>
                 <div class="filter">
                     <button name="Romantique"> <i class="fas fa-heart circle"></i> Romantique
