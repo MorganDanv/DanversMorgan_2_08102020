@@ -180,13 +180,13 @@ ul.no-visible-ipad {
 	text-decoration: none;
 	color: grey;
 	padding-top: 25px;
-
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .menu a:hover {
 	border-color: blue;
-	padding-left: 10px;
-	padding-right: 10px;
+
 }
 
 .menu-ul {
@@ -746,13 +746,14 @@ div.footer {
 	.borders-resp {
 		border-bottom: 2px solid white;
 		padding-bottom: 6px;
+		padding-left: 15px;
+		padding-right: 15px;
 
 	}
 
 	.borders-resp:hover {
 		border-color: blue;
-		padding-left: 15px;
-		padding-right: 15px;
+
 	}
 
 
