@@ -164,6 +164,7 @@ header.header {
 }
 
 
+
 .logo {
 	height: 3rem;
 	margin: 1rem 0;
@@ -175,14 +176,17 @@ ul.no-visible-ipad {
 
 .menu a {
 	margin: 0.5rem 1rem;
-	border-top: 2px solid white;
+	border-top: 2px solid transparent;
 	text-decoration: none;
 	color: grey;
+	padding-top: 25px;
+
 }
 
 .menu a:hover {
 	border-color: blue;
-	color: blue;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .menu-ul {
@@ -739,12 +743,17 @@ div.footer {
 		display: none;
 	}
 
-	.menu a {
+	.borders-resp {
 		border-bottom: 2px solid white;
-		border-top: hidden;
-		margin: 0;
+		padding-bottom: 6px;
+
 	}
 
+	.borders-resp:hover {
+		border-color: blue;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 
 	.link_moved-two {
