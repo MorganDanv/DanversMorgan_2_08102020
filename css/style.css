@@ -750,26 +750,12 @@ div.footer {
 		border-bottom: 2px solid #F2F2F2;
 	}
 
-	a.un:hover {
-		grid-column-start: 1;
-		grid-column-end: 2;
-		grid-row-start: 1;
-		grid-row-end: 1;
-		border-bottom: 2px solid blue;
-	}
-
 
 	a.deux {
 		border-bottom: 2px solid #F2F2F2;
 	}
 
-	a.deux:hover {
-		grid-column-start: 2;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 1;
-		border-bottom: 2px solid blue;
-	}
+
 
 	a.bricolage {
 		text-align: center;
@@ -846,6 +832,11 @@ div.footer {
 
 	}
 
+	.texte-gras-h3 {
+		font-size: 1rem;
+		padding-right: 2rem;
+	}
+
 	div.filters {
 		margin-top: 1rem;
 		flex-direction: column;
@@ -858,8 +849,6 @@ div.footer {
 
 	div.responsive-filter {
 		display: flex;
-
-
 	}
 
 	div.info {
